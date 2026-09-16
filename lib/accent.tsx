@@ -4,7 +4,7 @@ import React from "react";
 export function accent(text: string): React.ReactNode[] {
   return text.split("|").map((part, i) =>
     i % 2 === 1 ? (
-      <span key={i} className="text-accent">{part}</span>
+      <span key={i} className="text-accent-ink">{part}</span>
     ) : (
       <React.Fragment key={i}>{part}</React.Fragment>
     )

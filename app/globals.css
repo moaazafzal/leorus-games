@@ -5,7 +5,11 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-accent: #0099ff;
+  /* Deep copper: white button text on it reads at 4.9:1. */
+  --color-accent: #b8541a;
+  /* Accent used as TEXT. Same copper on the light page; see the body rule
+     below for dark ground. */
+  --color-accent-ink: #b8541a;
 
   /* ink/paper are the page's text and ground; surface is a raised card and
      sunken a recessed tile. inverse is a panel that stays dark in both
@@ -54,6 +58,18 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Copper as text drops to 3.9:1 on dark ground, so text there takes a lighter
+   amber mixed from the same accent. Panels that are dark in both themes
+   (navbar, footer, the games strip) opt in with .on-dark. Declared on body,
+   not :root, so it resolves against the accent the page sets inline. */
+body {
+  --color-accent-ink: var(--color-accent);
+}
+:root.dark body,
+.on-dark {
+  --color-accent-ink: color-mix(in oklab, var(--color-accent) 45%, #ffcf8a);
+}
+
 /* Big display type tightening */
 .display {
   letter-spacing: -0.04em;
@@ -61,7 +77,7 @@ body {
 }
 
 ::selection {
-  background: #0099ff;
+  background: #b8541a;
   color: #fff;
 }
 

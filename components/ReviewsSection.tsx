@@ -13,12 +13,12 @@ export type ReviewsContent = {
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 const AVATAR_COLORS = [
-  "bg-sky-100 text-sky-700",
-  "bg-amber-100 text-amber-700",
-  "bg-emerald-100 text-emerald-700",
-  "bg-violet-100 text-violet-700",
-  "bg-rose-100 text-rose-700",
-  "bg-teal-100 text-teal-700",
+  "bg-[#f7e6d2] text-[#8f3f12]",
+  "bg-[#f3dcc0] text-[#7a3510]",
+  "bg-[#faeede] text-[#a64b17]",
+  "bg-[#efd5b8] text-[#6f300e]",
+  "bg-[#f6e2ca] text-[#94461a]",
+  "bg-[#f2d9bd] text-[#853c12]",
 ];
 
 function initials(name: string): string {
@@ -118,7 +118,7 @@ export default function ReviewsSection({ content }: { content: ReviewsContent })
               {shown.map((r, i) => (
                 <figure
                   key={`${page}-${i}`}
-                  className="h-full flex flex-col rounded-3xl bg-surface border border-ink/[0.06] p-7 shadow-[0_2px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_40px_rgba(0,153,255,0.10)] hover:-translate-y-1 transition-[box-shadow,transform] duration-300"
+                  className="h-full flex flex-col rounded-3xl bg-surface border border-ink/[0.06] p-7 shadow-[0_2px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_40px_rgba(184,84,26,0.10)] hover:-translate-y-1 transition-[box-shadow,transform] duration-300"
                 >
                   <Stars count={Math.max(0, Math.min(5, r.rating))} />
                   <blockquote className="mt-4 flex-1 text-[15px] leading-relaxed text-ink/75">

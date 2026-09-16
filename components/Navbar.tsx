@@ -60,7 +60,7 @@ export default function Navbar({
         transition={{ type: "spring", stiffness: 260, damping: 28 }}
         className="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 pt-4"
       >
-        <div className="w-full max-w-3xl bg-[#2f2f2f] rounded-2xl px-5 py-3 flex items-center justify-between shadow-lg">
+        <div className="w-full max-w-3xl on-dark bg-[#2f2f2f] rounded-2xl px-5 py-3 flex items-center justify-between shadow-lg">
           <Link href="/" className="flex items-center gap-2.5 text-lg font-extrabold tracking-tight text-white">
             {logo && (
               <Image
@@ -73,7 +73,7 @@ export default function Navbar({
               />
             )}
             <span>
-              {brand}<span className="text-accent">.</span>
+              {brand}<span className="text-accent-ink">.</span>
             </span>
           </Link>
 
@@ -119,7 +119,7 @@ export default function Navbar({
               initial={{ opacity: 0, y: -12 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -12 }}
-              className="md:hidden absolute top-20 left-4 right-4 rounded-2xl bg-[#2f2f2f] shadow-xl p-4 flex flex-col gap-1"
+              className="md:hidden absolute top-20 left-4 right-4 on-dark rounded-2xl bg-[#2f2f2f] shadow-xl p-4 flex flex-col gap-1"
             >
               {links.map((l) => (
                 <Link

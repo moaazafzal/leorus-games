@@ -153,13 +153,13 @@ export default function Hero({ content }: { content: HeroContent }) {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ delay: 0.45, type: "spring", stiffness: 120, damping: 15 }}
             whileHover={{ scale: 1.04 }}
-            className="relative mx-auto mt-12 w-80 h-80 md:w-96 md:h-96 rounded-full bg-gradient-to-b from-sky-100 via-white to-sky-200 dark:bg-none dark:shadow-none shadow-[0_20px_60px_rgba(0,153,255,0.18)] flex flex-col items-center justify-start pt-12 md:pt-16 overflow-hidden"
+            className="relative mx-auto mt-12 w-80 h-80 md:w-96 md:h-96 rounded-full bg-gradient-to-b from-[#faf0e4] via-white to-[#f1d9bf] dark:bg-none dark:shadow-none shadow-[0_20px_60px_rgba(184,84,26,0.18)] flex flex-col items-center justify-start pt-12 md:pt-16 overflow-hidden"
           >
             <motion.p
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.75, duration: 0.5, ease: EASE }}
-              className={`${badgeSize(content.badgeNumber)} font-extrabold display text-accent tabular-nums`}
+              className={`${badgeSize(content.badgeNumber)} font-extrabold display text-accent-ink tabular-nums`}
             >
               {content.badgeNumber.split("").map((ch, i) => (
                 <span
@@ -176,7 +176,7 @@ export default function Hero({ content }: { content: HeroContent }) {
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.85, duration: 0.5, ease: EASE }}
-                className="mt-1 text-2xl font-extrabold tracking-wide text-accent uppercase"
+                className="mt-1 text-2xl font-extrabold tracking-wide text-accent-ink uppercase"
               >
                 {content.badgeWord}
               </motion.p>

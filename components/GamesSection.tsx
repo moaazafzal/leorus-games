@@ -117,7 +117,7 @@ export default function GamesSection({
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.8, ease: EASE }}
-        className="mx-auto max-w-[1400px] bg-[#222222] text-white rounded-[2.5rem] px-6 py-16 md:py-24 overflow-hidden"
+        className="mx-auto max-w-[1400px] on-dark bg-[#222222] text-white rounded-[2.5rem] px-6 py-16 md:py-24 overflow-hidden"
       >
         <div className="grid lg:grid-cols-[1fr_auto_1fr] items-center gap-10">
           <MarqueeSide icons={icons} className="hidden lg:block justify-self-end" />
@@ -170,7 +170,7 @@ export default function GamesSection({
                           transition: { type: "spring", stiffness: 300, damping: 15 },
                         },
                       }}
-                      whileHover={{ scale: 1.1, backgroundColor: "rgba(0,153,255,0.25)" }}
+                      whileHover={{ scale: 1.1, backgroundColor: "rgba(184,84,26,0.25)" }}
                       className="px-4 py-1.5 rounded-full border border-white/25 text-white/80 text-xs font-semibold uppercase tracking-wider cursor-default"
                     >
                       {t}

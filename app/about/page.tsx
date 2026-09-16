@@ -24,7 +24,7 @@ export default async function AboutPage() {
         <div className="mt-20 grid md:grid-cols-2 gap-6">
           {c.about.values.map((v: { title: string; body: string }, i: number) => (
             <div key={i} className="rounded-3xl border border-ink/10 bg-surface p-8">
-              <span className="text-4xl font-extrabold display text-accent">
+              <span className="text-4xl font-extrabold display text-accent-ink">
                 0{i + 1}
               </span>
               <h3 className="mt-5 text-2xl font-bold">{v.title}</h3>

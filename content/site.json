@@ -57,7 +57,7 @@
       "title": "Arcade Dairy",
       "genre": "Simulation",
       "icon": "/img/icons/farm-cash.webp",
-      "gradient": "from-sky-400 to-blue-700",
+      "gradient": "from-amber-500 to-orange-800",
       "downloads": "",
       "description": "Build your farm empire, raise happy livestock and stack up the cash.",
       "playUrl": "",
@@ -101,7 +101,7 @@
       "title": "Smoothie Maker: Juice Game",
       "genre": "Simulation",
       "icon": "/img/icons/juice-master.webp",
-      "gradient": "from-cyan-400 to-blue-600",
+      "gradient": "from-orange-300 to-amber-700",
       "downloads": "50K+",
       "description": "Mix, pour and serve the perfect drink for every thirsty customer.",
       "playUrl": "https://play.google.com/store/apps/details?id=com.lg.smoothiediy",
@@ -215,7 +215,7 @@
       {
         "name": "Aqua Games",
         "focus": "Our partner studio, building worlds together",
-        "gradient": "from-sky-400 to-blue-700",
+        "gradient": "from-amber-500 to-orange-800",
         "image": "/img/studios/aqua-logo.png",
         "logo": true
       }
@@ -461,7 +461,7 @@
     "title": "Leorus Games | Mobile Games Studio",
     "description": "Leorus is a mobile games company crafting 3D & 2D games, interactive apps, game publishing and players first experiences."
   },
-  "accentColor": "#0099ff",
+  "accentColor": "#b8541a",
   "nav": {
     "home": "Home",
     "about": "About",

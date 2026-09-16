@@ -28,7 +28,7 @@ export default function Footer({
 
   return (
     <footer className="px-4 md:px-6 pb-6">
-      <div className="mx-auto max-w-[1400px] bg-[#2f2f2f] text-white rounded-[2rem] px-8 md:px-12 py-12">
+      <div className="mx-auto max-w-[1400px] on-dark bg-[#2f2f2f] text-white rounded-[2rem] px-8 md:px-12 py-12">
         <div className="grid md:grid-cols-3 gap-10">
           <div>
             <p className="flex items-center gap-3 text-3xl font-extrabold display">
@@ -42,7 +42,7 @@ export default function Footer({
                 />
               )}
               <span>
-                {brand}<span className="text-accent">.</span>
+                {brand}<span className="text-accent-ink">.</span>
               </span>
             </p>
             <div className="mt-6 flex gap-4 text-white/40 text-sm">
@@ -63,7 +63,7 @@ export default function Footer({
           </div>
 
           <nav className="flex flex-col gap-2.5 text-sm">
-            <Link href="/" className="text-white font-medium hover:text-accent transition-colors">{labels.home ?? "Home"}</Link>
+            <Link href="/" className="text-white font-medium hover:text-accent-ink transition-colors">{labels.home ?? "Home"}</Link>
             <Link href="/about" className="text-white/50 hover:text-white transition-colors">{labels.about ?? "About"}</Link>
             <Link href="/services" className="text-white/50 hover:text-white transition-colors">{labels.services ?? "Services"}</Link>
             <Link href="/games" className="text-white/50 hover:text-white transition-colors">{labels.games ?? "Games"}</Link>
@@ -72,7 +72,7 @@ export default function Footer({
           </nav>
 
           <div className="text-sm">
-            <a href={`mailto:${content.email}`} className="text-white/70 hover:text-accent transition-colors">
+            <a href={`mailto:${content.email}`} className="text-white/70 hover:text-accent-ink transition-colors">
               {content.email}
             </a>
           </div>

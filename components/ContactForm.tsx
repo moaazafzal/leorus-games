@@ -155,7 +155,7 @@ export default function ContactForm({ content = {} }: { content?: ContactFormCon
       <button
         type="submit"
         disabled={sending}
-        className="w-full bg-ink text-paper font-bold py-4 rounded-xl hover:bg-accent transition-colors disabled:opacity-60 disabled:hover:bg-ink"
+        className="w-full bg-ink text-paper font-bold py-4 rounded-xl hover:bg-accent hover:text-white transition-colors disabled:opacity-60 disabled:hover:bg-ink"
       >
         {sending ? "Sending..." : content.button ?? "Send Message"}
       </button>

@@ -70,7 +70,7 @@ function Heading({ text }: { text: string }) {
 
 function Tick() {
   return (
-    <svg viewBox="0 0 20 20" className="w-4 h-4 mt-0.5 shrink-0 text-accent" aria-hidden="true">
+    <svg viewBox="0 0 20 20" className="w-4 h-4 mt-0.5 shrink-0 text-accent-ink" aria-hidden="true">
       <path
         d="M4 10.5l4 4 8-9"
         fill="none"
@@ -90,8 +90,8 @@ export function ServicePillars({ content }: { content: ServicesContent }) {
         <div className="grid md:grid-cols-3 gap-5">
           {(content.pillars ?? []).map((p, i) => (
             <Rise key={p.name} delay={i * 0.08}>
-              <article className="h-full rounded-3xl bg-surface border border-ink/[0.06] p-7 md:p-8 shadow-[0_2px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_16px_44px_rgba(0,153,255,0.12)] hover:-translate-y-1 transition-[box-shadow,transform] duration-300">
-                <span className="inline-flex items-center justify-center w-11 h-11 rounded-2xl bg-accent/10 text-accent font-extrabold">
+              <article className="h-full rounded-3xl bg-surface border border-ink/[0.06] p-7 md:p-8 shadow-[0_2px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_16px_44px_rgba(184,84,26,0.12)] hover:-translate-y-1 transition-[box-shadow,transform] duration-300">
+                <span className="inline-flex items-center justify-center w-11 h-11 rounded-2xl bg-accent/10 text-accent-ink font-extrabold">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <h3 className="mt-5 text-xl md:text-2xl font-extrabold">{p.name}</h3>

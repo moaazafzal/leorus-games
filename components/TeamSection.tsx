@@ -13,12 +13,13 @@ export type TeamContent = {
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 const RING_COLORS = [
-  "from-sky-300 to-blue-500",
-  "from-rose-300 to-pink-500",
-  "from-teal-300 to-emerald-500",
-  "from-violet-300 to-purple-500",
-  "from-amber-300 to-orange-500",
-  "from-cyan-300 to-sky-500",
+  // Champagne into copper and cognac: one warm family, varied in depth.
+  "from-[#f6dcb3] to-[#b8541a]",
+  "from-[#efc998] to-[#8f3f12]",
+  "from-[#f9e6c7] to-[#c8702e]",
+  "from-[#eab98a] to-[#a64b17]",
+  "from-[#f4d3a4] to-[#b5652b]",
+  "from-[#e9c08f] to-[#7a3510]",
 ];
 
 const TEAM_COLS: Record<number, string> = {

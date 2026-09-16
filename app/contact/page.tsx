@@ -23,7 +23,7 @@ export default async function ContactPage() {
           <div className="mt-10 space-y-3">
             <a
               href={`mailto:${c.contact.email}`}
-              className="block text-2xl font-bold hover:text-accent transition-colors"
+              className="block text-2xl font-bold hover:text-accent-ink transition-colors"
             >
               {c.contact.email}
             </a>

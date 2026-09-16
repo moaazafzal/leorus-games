@@ -89,7 +89,7 @@ export default function WebGamesSection({ content }: { content: WebGamesContent 
                 },
               }}
               whileHover={{ y: -6 }}
-              className="group block rounded-3xl overflow-hidden bg-surface border border-ink/[0.06] shadow-[0_2px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_16px_44px_rgba(0,153,255,0.12)] transition-shadow duration-300"
+              className="group block rounded-3xl overflow-hidden bg-surface border border-ink/[0.06] shadow-[0_2px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_16px_44px_rgba(184,84,26,0.12)] transition-shadow duration-300"
             >
               <div className="relative aspect-video overflow-hidden bg-sunken">
                 <Cover src={g.cover} alt={g.title} />

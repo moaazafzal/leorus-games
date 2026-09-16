@@ -47,7 +47,7 @@ function SnakeGame() {
     // snake
     snake.current.forEach((s, i) => {
       ctx.fillStyle = i === 0 ? "#ffffff" : "var(--fallback)";
-      ctx.fillStyle = i === 0 ? "#ffffff" : "#0099ff";
+      ctx.fillStyle = i === 0 ? "#ffffff" : "#d9822b";
       const pad = i === 0 ? 1 : 2;
       ctx.beginPath();
       ctx.roundRect(s.x * CELL + pad, s.y * CELL + pad, CELL - pad * 2, CELL - pad * 2, 5);
@@ -233,7 +233,7 @@ function MemoryGame() {
                 className="relative w-full h-full transition-transform duration-300 [transform-style:preserve-3d]"
                 style={{ transform: up ? "rotateY(180deg)" : "rotateY(0deg)" }}
               >
-                <div className="absolute inset-0 rounded-xl bg-inverse flex items-center justify-center text-accent font-extrabold [backface-visibility:hidden]">
+                <div className="absolute inset-0 on-dark rounded-xl bg-inverse flex items-center justify-center text-accent-ink font-extrabold [backface-visibility:hidden]">
                   ?
                 </div>
                 <div
@@ -259,7 +259,7 @@ function MemoryGame() {
           </div>
         )}
       </div>
-      <button onClick={shuffle} className="mt-3 text-xs font-semibold text-ink/40 hover:text-accent transition-colors">
+      <button onClick={shuffle} className="mt-3 text-xs font-semibold text-ink/40 hover:text-accent-ink transition-colors">
         Shuffle & restart
       </button>
     </div>
@@ -400,7 +400,7 @@ function Breakout() {
     ctx.fillStyle = "#111111";
     ctx.fillRect(0, 0, BW, BH);
     const bw = BW / COLS;
-    const hues = ["#0099ff", "#38bdf8", "#22d3ee", "#2dd4bf"];
+    const hues = ["#b8541a", "#d9822b", "#e8a85c", "#f3c98b"];
     bricks.current.forEach((alive, i) => {
       if (!alive) return;
       const r = Math.floor(i / COLS);
@@ -710,7 +710,7 @@ function FlappyGame() {
     if (!ctx) return;
     ctx.fillStyle = "#111111";
     ctx.fillRect(0, 0, FW, FH);
-    ctx.fillStyle = "#0099ff";
+    ctx.fillStyle = "#c8661f";
     pipes.current.forEach((p) => {
       ctx.beginPath();
       ctx.roundRect(p.x, 0, 40, p.gapY - 55, 6);
@@ -721,7 +721,7 @@ function FlappyGame() {
     ctx.beginPath();
     ctx.arc(70, bird.current.y, 11, 0, Math.PI * 2);
     ctx.fill();
-    ctx.fillStyle = "#0099ff";
+    ctx.fillStyle = "#c8661f";
     ctx.beginPath();
     ctx.arc(74, bird.current.y - 3, 3.5, 0, Math.PI * 2);
     ctx.fill();
@@ -845,7 +845,7 @@ function StackGame() {
     ctx.fillRect(0, 0, SW, SH);
     const count = layers.current.length;
     const offset = Math.max(0, (count + 1) * LAYER_H - (SH - 60));
-    const hues = ["#0099ff", "#22d3ee", "#2dd4bf", "#38bdf8"];
+    const hues = ["#b8541a", "#e8a85c", "#d9822b", "#f3c98b"];
     layers.current.forEach((l, i) => {
       const y = SH - 20 - (i + 1) * LAYER_H + offset;
       if (y > SH) return;
@@ -1021,7 +1021,7 @@ function TicTacToe() {
             aria-label={v ?? "Empty cell"}
             className={`aspect-square rounded-2xl text-3xl font-extrabold display flex items-center justify-center transition-colors ${
               v ? "bg-ink/5" : "bg-ink/5 hover:bg-accent/15"
-            } ${v === "X" ? "text-accent" : "text-ink/70"}`}
+            } ${v === "X" ? "text-accent-ink" : "text-ink/70"}`}
           >
             {v}
           </button>

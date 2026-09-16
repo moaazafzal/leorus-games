@@ -47,7 +47,7 @@ export default async function RootLayout({
       <body
         className={`${inter.variable} antialiased`}
         suppressHydrationWarning
-        style={{ ["--color-accent" as string]: content.accentColor || "#0099ff" } as React.CSSProperties}
+        style={{ ["--color-accent" as string]: content.accentColor || "#b8541a" } as React.CSSProperties}
       >
         <Navbar brand={content.brand} labels={content.nav} logo={content.logo} />
         {children}
