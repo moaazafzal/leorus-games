@@ -30,7 +30,7 @@ export default async function ContactPage() {
             <p className="text-ink/50">{c.contact.hours}</p>
           </div>
         </div>
-        <ContactForm content={{ ...c.contact.form, email: c.contact.email }} />
+        <ContactForm content={{ ...c.contact.form, email: c.contact.email, source: c.brand }} />
       </section>
     </main>
   );

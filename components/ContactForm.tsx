@@ -6,6 +6,8 @@ export type ContactFormContent = {
   topics?: string[] | string;
   /** Where the relay delivers. Comes from contact.email in the content file. */
   email?: string;
+  /** Which studio's site the message came from. Comes from the site's brand. */
+  source?: string;
   button?: string;
   successTitle?: string;
   successBody?: string;
@@ -22,6 +24,7 @@ function normalizeTopics(topics: string[] | string | undefined): string[] {
 // address triggers a one-off confirmation mail there; until that link is
 // clicked, FormSubmit delivers nothing.
 const FALLBACK_INBOX = "leorusgames@gmail.com";
+const FALLBACK_SOURCE = "Leorus Games";
 
 // Everyone who receives every enquiry. The Aqua Games and Leorus Games sites
 // carry the same list. FormSubmit relays to the single address in its
@@ -38,6 +41,7 @@ const TEAM_INBOXES = [
 
 export default function ContactForm({ content = {} }: { content?: ContactFormContent }) {
   const inbox = (content.email || "").trim() || FALLBACK_INBOX;
+  const source = (content.source || "").trim() || FALLBACK_SOURCE;
   const endpoint = `https://formsubmit.co/ajax/${inbox}`;
   const copies = TEAM_INBOXES.filter((a) => a.toLowerCase() !== inbox.toLowerCase());
   const [sent, setSent] = useState(false);
@@ -51,7 +55,15 @@ export default function ContactForm({ content = {} }: { content?: ContactFormCon
     setSending(true);
     setError("");
 
-    const data = Object.fromEntries(new FormData(e.currentTarget).entries());
+    const fields = Object.fromEntries(new FormData(e.currentTarget).entries());
+    // The same five inboxes get messages from both studio sites, so every
+    // message says where it came from: first row of the email, and the exact
+    // page it was sent from as the last.
+    const data = {
+      "Received from": `${source} website`,
+      ...fields,
+      "Sent from page": window.location.href,
+    };
 
     try {
       const res = await fetch(endpoint, {
@@ -83,7 +95,7 @@ export default function ContactForm({ content = {} }: { content?: ContactFormCon
 
   return (
     <form onSubmit={submit} className="rounded-3xl border border-ink/10 bg-surface p-8 space-y-5">
-      <input type="hidden" name="_subject" value="New message from the Leorus Games site" />
+      <input type="hidden" name="_subject" value={`[${source} website] New contact message`} />
       <input type="hidden" name="_cc" value={copies.join(",")} />
       <input type="hidden" name="_template" value="table" />
       <input type="hidden" name="_captcha" value="false" />
