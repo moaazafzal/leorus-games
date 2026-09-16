@@ -418,11 +418,6 @@
     "members": [
       {
         "name": "",
-        "role": "Cofounder & Senior Software Developer",
-        "photo": "/img/team/team-ceo.webp"
-      },
-      {
-        "name": "",
         "role": "Cofounder & CEO",
         "photo": "/img/team/team-cto.webp"
       },
@@ -430,6 +425,11 @@
         "name": "",
         "role": "Cofounder & COO",
         "photo": "/img/team/team-coo.webp"
+      },
+      {
+        "name": "",
+        "role": "Cofounder & Senior Software Developer",
+        "photo": "/img/team/team-ceo.webp"
       },
       {
         "name": "",
