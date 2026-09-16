@@ -40,14 +40,14 @@ export default function PartnerSection({ content }: { content: PartnerContent })
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3, type: "spring", stiffness: 120, damping: 13 }}
-              className="pointer-events-none hidden md:block absolute right-8 lg:right-20 -bottom-6 w-52 lg:w-64"
+              className="pointer-events-none hidden md:block absolute right-8 lg:right-20 -bottom-6 w-40 lg:w-60"
             >
               <div className="animate-floaty-slow">
                 <Image
                   src={content.mascot}
                   alt=""
-                  width={720}
-                  height={563}
+                  width={620}
+                  height={681}
                   onError={() => setBirdErr(true)}
                   className="w-full h-auto"
                 />
