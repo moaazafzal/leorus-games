@@ -1,0 +1,188 @@
+@import "tailwindcss";
+
+/* Dark mode is driven by a .dark class on <html>, not by the media query, so
+   the toggle can override the OS preference. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-accent: #0099ff;
+
+  /* ink/paper are the page's text and ground; surface is a raised card and
+     sunken a recessed tile. inverse is a panel that stays dark in both
+     themes (footer-style blocks, the memory-card backs, the success panel). */
+  --color-ink: #111111;
+  --color-paper: #fafafa;
+  --color-surface: #ffffff;
+  --color-sunken: #efefef;
+  --color-inverse: #111111;
+  --color-on-inverse: #ffffff;
+
+  --font-sans: var(--font-inter), Inter, sans-serif;
+}
+
+:root {
+  color-scheme: light;
+}
+
+/* Two class selectors, so this outranks the :root block Tailwind emits for
+   @theme regardless of source order. */
+:root.dark {
+  color-scheme: dark;
+
+  --color-ink: #e9ecf1;
+  --color-paper: #0d1014;
+  --color-surface: #171b21;
+  --color-sunken: #1e232b;
+  --color-inverse: #232a33;
+  --color-on-inverse: #e9ecf1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: clip;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Big display type tightening */
+.display {
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+}
+
+::selection {
+  background: #0099ff;
+  color: #fff;
+}
+
+/* Cards carry a soft black shadow that vanishes on a dark ground, so give
+   them a faint outline there instead. */
+:root.dark .shadow-\[0_2px_20px_rgba\(0\,0\,0\,0\.04\)\],
+:root.dark .shadow-\[0_2px_20px_rgba\(0\,0\,0\,0\.05\)\] {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+/* ---------- animation utilities ---------- */
+
+/* Gentle vertical bob — for mascots & icon tiles */
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.animate-floaty {
+  animation: floaty 4.5s ease-in-out infinite;
+}
+.animate-floaty-slow {
+  animation: floaty 6.5s ease-in-out infinite;
+}
+
+/* Slow rotation — orbit rings */
+@keyframes spin360 {
+  to { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spin360 28s linear infinite;
+}
+.animate-spin-slower {
+  animation: spin360 48s linear infinite reverse;
+}
+
+/* Soft pulse — orbit core */
+@keyframes pulse-glow {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.35); opacity: 0.7; }
+}
+.animate-pulse-glow {
+  animation: pulse-glow 2.4s ease-in-out infinite;
+}
+
+/* Digit wave — each character of a big number bobs in turn */
+@keyframes digit-bob {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-0.14em); }
+}
+.animate-digit {
+  display: inline-block;
+  animation: digit-bob 1.9s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Shine sweep on hover — add .shine to a group container */
+.shine {
+  position: relative;
+  overflow: hidden;
+}
+.shine::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgba(255, 255, 255, 0.35) 50%,
+    transparent 60%
+  );
+  transform: translateX(-120%);
+  transition: transform 0.7s ease;
+  pointer-events: none;
+}
+.shine:hover::after {
+  transform: translateX(120%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-digit,
+  .animate-floaty,
+  .animate-floaty-slow,
+  .animate-spin-slow,
+  .animate-spin-slower,
+  .animate-pulse-glow {
+    animation: none;
+  }
+}
+
+/* Seamless vertical marquee — content must be duplicated once (2 copies) */
+@keyframes scroll-y {
+  from { transform: translateY(0); }
+  to { transform: translateY(-50%); }
+}
+.animate-scroll-y {
+  animation: scroll-y 50s linear infinite;
+}
+.animate-scroll-y-reverse {
+  animation: scroll-y 50s linear infinite reverse;
+}
+
+/* Seamless horizontal marquee — 2 copies side by side */
+@keyframes scroll-x {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-scroll-x {
+  animation: scroll-x 45s linear infinite;
+}
+.animate-scroll-x-reverse {
+  animation: scroll-x 60s linear infinite reverse;
+}
+.ticker-group:hover .animate-scroll-x-reverse {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-scroll-y,
+  .animate-scroll-y-reverse,
+  .animate-scroll-x,
+  .animate-scroll-x-reverse {
+    animation: none;
+  }
+}

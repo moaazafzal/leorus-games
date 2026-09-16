@@ -1,0 +1,574 @@
+{
+  "brand": "Leorus Games",
+  "hero": {
+    "line1": "Games People",
+    "line2": "Can't Put Down",
+    "badgeNumber": "15, 000, 000",
+    "badgeWord": "",
+    "badgeLabel": "Downloads",
+    "mascotBadge": "/img/mascot-droplet.webp",
+    "mascotLeft": "/img/mascot-farmer.webp",
+    "mascotRight": "/img/mascot-boy.webp",
+    "stats": [
+      {
+        "value": 100,
+        "suffix": "+",
+        "label": "Games Published"
+      },
+      {
+        "value": 100,
+        "suffix": "+",
+        "label": "Clients"
+      },
+      {
+        "value": 5,
+        "suffix": "★",
+        "label": "Star Ratings"
+      }
+    ]
+  },
+  "gamesSection": {
+    "titleLines": [
+      "Discover",
+      "Our |Game|",
+      "Collection"
+    ],
+    "body": "From calming puzzles to thrilling showdowns, find your next mobile obsession with Leorus.",
+    "chips": [
+      "Casual",
+      "Puzzle",
+      "Simulation",
+      "Action"
+    ]
+  },
+  "games": [
+    {
+      "title": "Rush Run (Need to pee)",
+      "genre": "Casual",
+      "icon": "/img/icons/toilet-rush.webp",
+      "gradient": "from-teal-300 to-emerald-600",
+      "downloads": "5M+",
+      "description": "Beat the queue and make it in time. A frantic dash you'll replay for hours.",
+      "playUrl": "https://play.google.com/store/apps/details?id=com.leorus.rushrun",
+      "appUrl": "https://apps.apple.com/app/id1590857309",
+      "screen": ""
+    },
+    {
+      "title": "Arcade Dairy",
+      "genre": "Simulation",
+      "icon": "/img/icons/farm-cash.webp",
+      "gradient": "from-sky-400 to-blue-700",
+      "downloads": "",
+      "description": "Build your farm empire, raise happy livestock and stack up the cash.",
+      "playUrl": "",
+      "appUrl": "https://apps.apple.com/app/id6450735142",
+      "screen": ""
+    },
+    {
+      "title": "Emoji Puzzle: Fun Emoji Games",
+      "genre": "Puzzle, Casual",
+      "icon": "/img/icons/emoji-link.webp",
+      "gradient": "from-slate-400 to-slate-800",
+      "downloads": "1M+",
+      "description": "Connect the matching moods and clear the board before time runs out.",
+      "playUrl": "https://play.google.com/store/apps/details?id=com.leorus.guess.emoji.puzzle",
+      "appUrl": "",
+      "screen": ""
+    },
+    {
+      "title": "Popcorn Games: Corn Pop",
+      "genre": "Casual",
+      "icon": "/img/icons/perfect-popcorn.webp",
+      "gradient": "from-violet-500 to-indigo-700",
+      "downloads": "1M+",
+      "description": "Pop, season and serve. Keep the queue moving and the tubs full.",
+      "playUrl": "https://play.google.com/store/apps/details?id=com.lg.perfectpopcorn",
+      "appUrl": "https://apps.apple.com/app/id1629387630",
+      "screen": ""
+    },
+    {
+      "title": "4x4 Offroad Jeep Simulator",
+      "genre": "Simulation",
+      "icon": "/img/icons/offroad-master.webp",
+      "gradient": "from-amber-400 to-orange-600",
+      "downloads": "50K+",
+      "description": "Take the 4x4 over dunes, rocks and rivers. No road required.",
+      "playUrl": "https://play.google.com/store/apps/details?id=com.lg.midnightmadness",
+      "appUrl": "https://apps.apple.com/app/id6450225098",
+      "screen": ""
+    },
+    {
+      "title": "Smoothie Maker: Juice Game",
+      "genre": "Simulation",
+      "icon": "/img/icons/juice-master.webp",
+      "gradient": "from-cyan-400 to-blue-600",
+      "downloads": "50K+",
+      "description": "Mix, pour and serve the perfect drink for every thirsty customer.",
+      "playUrl": "https://play.google.com/store/apps/details?id=com.lg.smoothiediy",
+      "appUrl": "https://apps.apple.com/app/id6444128105",
+      "screen": ""
+    },
+    {
+      "title": "Animal Hunting: Deer Game",
+      "genre": "Action",
+      "icon": "/img/icons/hunting-season.webp",
+      "gradient": "from-lime-300 to-green-600",
+      "downloads": "10K+",
+      "description": "Line up the perfect shot across wide open country.",
+      "playUrl": "https://play.google.com/store/apps/details?id=com.leorus.shotguns.shooting.hunter.deer.hunting.sniper",
+      "appUrl": "https://apps.apple.com/app/id6463405196",
+      "screen": ""
+    },
+    {
+      "title": "Satismind: Organize Mini Game",
+      "genre": "Puzzle",
+      "icon": "/img/icons/pack-it-up.webp",
+      "gradient": "from-amber-300 to-orange-500",
+      "downloads": "10K+",
+      "description": "Fit every item into the case just right. Tidy, calming, oddly addictive.",
+      "playUrl": "https://play.google.com/store/apps/details?id=com.lg.satismind.organize.tiny.game",
+      "appUrl": "https://apps.apple.com/app/id6742491878",
+      "screen": ""
+    },
+    {
+      "title": "Screw Game 3D: Jam Pin Puzzle",
+      "genre": "Puzzle",
+      "icon": "/img/icons/screw-jam.webp",
+      "gradient": "from-fuchsia-400 to-purple-800",
+      "downloads": "10K+",
+      "description": "Unscrew, sort and solve. A satisfying puzzle that gets trickier every level.",
+      "playUrl": "https://play.google.com/store/apps/details?id=com.lg.screw.puzzle.nuts.bolts.game",
+      "appUrl": "https://apps.apple.com/app/id6742563672",
+      "screen": ""
+    },
+    {
+      "title": "Color Block Tank Shooter",
+      "genre": "Puzzle",
+      "icon": "/img/icons/block-cannon.webp",
+      "gradient": "from-rose-400 to-red-600",
+      "downloads": "100+",
+      "description": "Aim, fire and blast the colour blocks away before they stack too high.",
+      "playUrl": "https://play.google.com/store/apps/details?id=com.lg.colorblock.tank.shooter.puzzle",
+      "appUrl": "https://apps.apple.com/app/id6755390113",
+      "screen": ""
+    },
+    {
+      "title": "GraveStone DIY 3D",
+      "genre": "Simulation",
+      "icon": "/img/icons/grave-digger.webp",
+      "gradient": "from-indigo-400 to-violet-700",
+      "downloads": "10+",
+      "description": "Dig deep, uncover secrets and see what rests beneath the headstones.",
+      "playUrl": "https://play.google.com/store/apps/details?id=com.leorus.gravestone",
+      "appUrl": "https://apps.apple.com/app/id1636205667",
+      "screen": ""
+    }
+  ],
+  "partner": {
+    "title": "Partner with Leorus\nIP Holders Welcome",
+    "body": "Our mission is to craft immersive experiences that stay with players. Established studio or rising creator, we turn your IP into a game people love.",
+    "mascot": "/img/mascot-bench.webp",
+    "cards": [
+      {
+        "icon": "🚀",
+        "title": "Create Your Game Universe",
+        "body": "Have a bold IP idea? We take you from concept to launch, covering design, development and everything in between, to build a world players never want to leave."
+      },
+      {
+        "icon": "⚔️",
+        "title": "Expand Your IP's Potential",
+        "body": "Already own a hit IP? Our design and marketing engine takes it to new platforms, new formats and millions of new players worldwide."
+      },
+      {
+        "icon": "👛",
+        "title": "Monetize Your IP with Ease",
+        "body": "Turn characters and stories into thriving games. We bridge content and game craft so your passion becomes a sustainable business."
+      }
+    ]
+  },
+  "growth": {
+    "title": "Growth Sandbox\nInsight Driven\nGame Growth",
+    "body": "Advanced analytics reveal what keeps players coming back. Our data driven programs sharpen every game's potential, and our creator network gets seamless publishing and launch support from day one.",
+    "insightsTitle": "Unlock Actionable Insights with Our Data Tools",
+    "insightsBody": "Our analytics suite dives deep into player behavior, spotlighting the features players love and the moments they drop off.",
+    "chartLabel": "Player Engagement",
+    "chartBadge": "+32% QoQ",
+    "careersTitle": "Ready to Level Up Your Career?",
+    "careersBody": "Bring your spark. Join the crew redefining what mobile play can be.",
+    "careersCta": "Join the Team",
+    "careersLink": "/contact",
+    "bars": [
+      42,
+      68,
+      55,
+      80,
+      62,
+      92,
+      74,
+      100
+    ]
+  },
+  "studios": {
+    "title": "Explore Our Studios",
+    "body": "Where innovation meets craft. A network of world class teams, all chasing one mission: redefine mobile entertainment.",
+    "items": [
+      {
+        "name": "Aqua Games",
+        "focus": "Our partner studio, building worlds together",
+        "gradient": "from-sky-400 to-blue-700",
+        "image": "/img/studios/aqua-logo.png",
+        "logo": true
+      }
+    ],
+    "logosTitle": "Our Studios:",
+    "logosEmoji": "🎮"
+  },
+  "about": {
+    "title": "We Make Play",
+    "titleMuted": "Unforgettable",
+    "intro": "Leorus is a mobile games company building, publishing and scaling titles across genres, powered by a network of specialist studios and a shared growth engine.",
+    "values": [
+      {
+        "title": "Players First",
+        "body": "Every decision starts with the person holding the phone. Fun is the metric that outranks all others."
+      },
+      {
+        "title": "Craft Obsessed",
+        "body": "Small details compound. We polish mechanics, art and feel until a game is impossible to put down."
+      },
+      {
+        "title": "Data with Taste",
+        "body": "Numbers guide us, instinct steers us. We pair deep analytics with strong creative conviction."
+      },
+      {
+        "title": "Grow Together",
+        "body": "Studios, creators and partners win as one team. We share knowledge, tools and upside."
+      }
+    ]
+  },
+  "gamesPage": {
+    "title": "Our |Games|",
+    "intro": "Hundreds of titles shipped, millions of daily players. A snapshot of the worlds we're building right now.",
+    "tickerSeconds": 60
+  },
+  "contact": {
+    "title": "Let's Build |Together|",
+    "intro": "Pitch an IP, publish a game, or join the team. Drop us a line and we'll get back within two working days.",
+    "email": "io.aquagames@gmail.com",
+    "hours": "Mon, Fri, 9:00, 18:00 (GMT+5)",
+    "form": {
+      "topics": [
+        "Publish my game",
+        "Partner on an IP",
+        "Careers",
+        "Something else"
+      ],
+      "button": "Send Message",
+      "successTitle": "Message received.",
+      "successBody": "Thanks for reaching out. We'll reply soon."
+    }
+  },
+  "footer": {
+    "tagline": "",
+    "email": "io.aquagames@gmail.com",
+    "copyright": "© Leorus Games 2026",
+    "socials": [
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/company/aquagames/"
+      }
+    ]
+  },
+  "reviews": {
+    "title": "Loved by Partners & Players",
+    "body": "A few words from the studios, creators and players we build with every day.",
+    "items": [
+      {
+        "quote": "for my first time working with a developer on an idea I had I had a great experience. moaaz made the process simple and was able to bring my vision to life. he is a professional and communication is a foundation of how he conducts business. if I needed to make a change or add something he was very accommodating and patient with me. will look forward to working with him in the future to add to my game or if I ever need support he will be my first contact.",
+        "name": "sw33tr00tsceo",
+        "role": "United States",
+        "rating": 5
+      },
+      {
+        "quote": "Working with Moaaz was an outstanding experience. He expertly integrated AdMob, Unity Ads, and in app purchases into my Unity game with great attention to detail. Everything works flawlessly, and he made the entire process smooth and stress free. Moaaz was professional, responsive, and delivered exactly what I needed. If you’re looking to monetize your Unity game, I highly recommend working with him!",
+        "name": "showtimerivas",
+        "role": "United States",
+        "rating": 5
+      },
+      {
+        "quote": "An absolute genius of a unity coder! I’ve done multiple orders and each one has been exceptional. Communication is great and fast, order quality is outstanding and the knowledge and expertise shown is more than I can comprehend. Will be back for future projects I have!",
+        "name": "stevevaj",
+        "role": "Australia",
+        "rating": 5
+      },
+      {
+        "quote": "Moaz is a sincere and very cooperative guy, I am very satisfied with his work, I recommend him to everyone.",
+        "name": "teutamuka",
+        "role": "Germany",
+        "rating": 5
+      },
+      {
+        "quote": "Moaaz was a great person to work with on getting my ads integration fixed. His replies were prompt, and the work solved all my problems. I would highly recommend using his services as I know I will be using his services in my future projects.",
+        "name": "neowonka",
+        "role": "United States",
+        "rating": 5
+      },
+      {
+        "quote": "He has a lot of experience in his work and does his job with interest. Will definitely make him part of my team in game functionality integration.",
+        "name": "sourceecodee",
+        "role": "Pakistan",
+        "rating": 5
+      },
+      {
+        "quote": "Moaaz helped me integrate Google Admob and even went above and beyond to give me a lot of help with the implementation of it. He is also extremely respectful, patient and professional with his implementation and troubleshooting. This guy is Pro.",
+        "name": "vzz376",
+        "role": "Sweden",
+        "rating": 5
+      },
+      {
+        "quote": "In simple terms, he knows what he is doing. The best part is that he is organized which makes it very simple for you to finish your work easily and publish faster! Keep up the great work, I recommend him!",
+        "name": "mnassar75",
+        "role": "Turkey",
+        "rating": 5
+      },
+      {
+        "quote": "this guy is Great!!! he was so nice and worked through issues with me that i couldn’t have solved myself. I definitely recommend and would def hire him again!! cheers man!!",
+        "name": "bobdavis988",
+        "role": "United States",
+        "rating": 5
+      },
+      {
+        "quote": "Moaaz is an absolute pleasure to work with. He’s very knowledgeable, kind, informative, and has a great desire to accomplish the task in a favorable way. He exceeded my expectations in numerous ways. I’m honestly impressed with his work and professionalism. Highly recommended. Thanks Moaaz!",
+        "name": "n7soarchangel",
+        "role": "United States",
+        "rating": 5
+      },
+      {
+        "quote": "Thank you for your help. I truly owe you a great debt of gratitude. Your kindness will never be forgotten.",
+        "name": "zikrihusaini969",
+        "role": "Malaysia",
+        "rating": 5
+      },
+      {
+        "quote": "Very good dev, recommend!",
+        "name": "aleksandrsgrigi",
+        "role": "Latvia",
+        "rating": 5
+      },
+      {
+        "quote": "Fixed my issue which I was stuck in for days thanks for all your work!",
+        "name": "penguinstudi0",
+        "role": "Pakistan",
+        "rating": 5
+      },
+      {
+        "quote": "Thank you so much. Moaaz did far more than expected. Will order again!",
+        "name": "g4ut4m4",
+        "role": "Austria",
+        "rating": 5
+      },
+      {
+        "quote": "attention to details and quick response 👌 work again soon with him",
+        "name": "tiyantiyantamil",
+        "role": "Saudi Arabia",
+        "rating": 5
+      },
+      {
+        "quote": "best Dev I’ve hired in a very long time!",
+        "name": "kieronl566",
+        "role": "United Kingdom",
+        "rating": 5
+      },
+      {
+        "quote": "He is doing a very good job",
+        "name": "neorichi",
+        "role": "Spain",
+        "rating": 5
+      },
+      {
+        "quote": "expert dev. very quick and good work",
+        "name": "yzstudio641",
+        "role": "Morocco",
+        "rating": 5
+      },
+      {
+        "quote": "Great service as always!",
+        "name": "eladii",
+        "role": "Israel",
+        "rating": 5
+      },
+      {
+        "quote": "Amazing work and fast!",
+        "name": "musictronic",
+        "role": "Argentina",
+        "rating": 5
+      },
+      {
+        "quote": "Extremely professional and polite",
+        "name": "jacksonscou",
+        "role": "Australia",
+        "rating": 5
+      }
+    ],
+    "perPage": 3
+  },
+  "team": {
+    "title": "Meet the Team",
+    "body": "The people behind the play. Designers, engineers and storytellers building Leorus's worlds.",
+    "members": [
+      {
+        "name": "",
+        "role": "Cofounder & Senior Software Developer",
+        "photo": "/img/team/team-ceo.webp"
+      },
+      {
+        "name": "",
+        "role": "Cofounder & CEO",
+        "photo": "/img/team/team-cto.webp"
+      },
+      {
+        "name": "",
+        "role": "Cofounder & COO",
+        "photo": "/img/team/team-coo.webp"
+      },
+      {
+        "name": "",
+        "role": "CMO",
+        "photo": "/img/team/team-cmo.webp"
+      },
+      {
+        "name": "",
+        "role": "UI/UX Designer",
+        "photo": "/img/team/team-designer.webp"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Life at Leorus",
+    "body": "Moments from the studio. Launches, brainstorms, birthdays and game nights with the crew.",
+    "interval": 4,
+    "images": [
+      "/img/gallery/team-02.webp",
+      "/img/gallery/team-08.webp",
+      "/img/gallery/team-01.webp",
+      "/img/gallery/team-03.webp",
+      "/img/gallery/team-04.webp",
+      "/img/gallery/team-05.webp",
+      "/img/gallery/team-06.webp"
+    ]
+  },
+  "seo": {
+    "title": "Leorus Games | Mobile Games Studio",
+    "description": "Leorus is a mobile games company crafting 3D & 2D games, interactive apps, game publishing and players first experiences."
+  },
+  "accentColor": "#0099ff",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "games": "Games",
+    "contact": "Contact",
+    "arcade": "Arcade",
+    "services": "Services"
+  },
+  "minigames": {
+    "title": "The |Arcade|",
+    "body": "We make games, so here are tiny games for you to enjoy. Beat your best score before you scroll on.",
+    "games": [
+      "snake",
+      "memory",
+      "bubble",
+      "breakout",
+      "flappy",
+      "stack",
+      "reaction",
+      "simon",
+      "ttt",
+      "stroop"
+    ]
+  },
+  "logo": "/img/logo.png",
+  "webGames": {
+    "title": "Play in |Browser|",
+    "body": "Web builds that start in a tab. No install, no store, just press play.",
+    "items": [
+      {
+        "title": "Rush Run: Need to Pee",
+        "genre": "Runner",
+        "cover": "/img/web/rush-run-web.webp",
+        "url": "https://playgama.com/game/rush-run-need-to-pee--toilet-dash-runner-game"
+      },
+      {
+        "title": "Screw Puzzle: Nuts & Bolts",
+        "genre": "Puzzle",
+        "cover": "/img/web/screw-puzzle-web.webp",
+        "url": "https://playgama.com/game/screw-puzzle-nuts-bolts-master"
+      },
+      {
+        "title": "Survival Rush 2D",
+        "genre": "Arcade",
+        "cover": "/img/web/survival-rush.webp",
+        "url": "https://playgama.com/game/survival-rush-2d-black-white-dodge"
+      },
+      {
+        "title": "Tik Tok Challenge",
+        "genre": "Skill",
+        "cover": "/img/web/tik-tok-challenge.webp",
+        "url": "https://playgama.com/game/tik-tok-challenge"
+      }
+    ]
+  },
+  "services": {
+    "title": "What We |Build|",
+    "intro": "Three things, done properly: the game itself, the interface players live in, and the growth that gets it in front of them.",
+    "pillars": [
+      {
+        "name": "Game Development",
+        "body": "From an empty Unity project to a global launch, built in house rather than passed around.",
+        "points": "End to end from concept to launch, Android, iOS, Amazon, Web and Web3, Multiplayer and AR/VR builds, Hyper casual, hybrid casual and simulation"
+      },
+      {
+        "name": "UI and UX Design",
+        "body": "Interfaces designed around the player, then tuned against what retention actually shows.",
+        "points": "Players first interface design, Visuals matched to the gameplay, Flows tuned for engagement and conversion, Art and UI produced in house"
+      },
+      {
+        "name": "User Acquisition",
+        "body": "Getting the game in front of the right players, then scaling only what pays for itself.",
+        "points": "App store optimisation for organic reach, Paid UA across Google, Meta, TikTok and Mintegral, Creative testing in a continuous loop, Scaling judged on ROAS, not installs"
+      }
+    ],
+    "stackTitle": "The |Stack|",
+    "stack": [
+      {
+        "group": "Engines and art",
+        "items": "Unity 3D, Blender, Autodesk Maya, Photoshop, Illustrator"
+      },
+      {
+        "group": "Monetisation and analytics",
+        "items": "AdMob, AppLovin, ironSource LevelPlay, Appodeal, Firebase GA4, GameAnalytics"
+      },
+      {
+        "group": "Attribution and growth",
+        "items": "Adjust, AppsFlyer, Airbridge, Solar Engine, Google Ads, Meta Ads, TikTok Ads, Mintegral"
+      }
+    ],
+    "whyTitle": "Why Studios |Stay|",
+    "why": [
+      {
+        "name": "Built in house",
+        "body": "Code, art and deployment sit with one team, so nothing is lost in a handoff and live operations can be supported after launch."
+      },
+      {
+        "name": "Proven at scale",
+        "body": "Millions of players acquired across the catalogue, including titles scaled inside genres that are already crowded."
+      },
+      {
+        "name": "Data driven and lean",
+        "body": "Product calls come from analytics and A/B tests, with a short loop between building, acquisition and monetisation."
+      }
+    ],
+    "ctaTitle": "Let's build something players finish",
+    "ctaBody": "Tell us what you have in mind. A concept, a prototype that stalled, or a live game that needs its numbers moved.",
+    "ctaLabel": "Start a project"
+  }
+}
