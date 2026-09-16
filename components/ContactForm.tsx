@@ -23,10 +23,14 @@ function normalizeTopics(topics: string[] | string | undefined): string[] {
 // clicked, FormSubmit delivers nothing.
 const FALLBACK_INBOX = "leorusgames@gmail.com";
 
-// FormSubmit relays to the single address in its endpoint, so everyone else
-// is copied in. Only the endpoint address needs the one-off confirmation
-// click; these just receive.
-const ALSO_TO = [
+// Everyone who receives every enquiry. The Aqua Games and Leorus Games sites
+// carry the same list. FormSubmit relays to the single address in its
+// endpoint, so the rest are copied in; the endpoint address is dropped from
+// the copies so nobody receives a message twice. Only the endpoint address
+// needs the one-off confirmation click; the copied ones just receive.
+const TEAM_INBOXES = [
+  "io.aquagames@gmail.com",
+  "leorusgames@gmail.com",
   "moaazafzal@gmail.com",
   "husainisadiq@gmail.com",
   "hamzaayoubofficial@gmail.com",
@@ -35,6 +39,7 @@ const ALSO_TO = [
 export default function ContactForm({ content = {} }: { content?: ContactFormContent }) {
   const inbox = (content.email || "").trim() || FALLBACK_INBOX;
   const endpoint = `https://formsubmit.co/ajax/${inbox}`;
+  const copies = TEAM_INBOXES.filter((a) => a.toLowerCase() !== inbox.toLowerCase());
   const [sent, setSent] = useState(false);
   const [sending, setSending] = useState(false);
   const [error, setError] = useState("");
@@ -79,7 +84,7 @@ export default function ContactForm({ content = {} }: { content?: ContactFormCon
   return (
     <form onSubmit={submit} className="rounded-3xl border border-ink/10 bg-surface p-8 space-y-5">
       <input type="hidden" name="_subject" value="New message from the Leorus Games site" />
-      <input type="hidden" name="_cc" value={ALSO_TO.join(",")} />
+      <input type="hidden" name="_cc" value={copies.join(",")} />
       <input type="hidden" name="_template" value="table" />
       <input type="hidden" name="_captcha" value="false" />
       {/* Honeypot: people leave it empty, bots fill it in and get dropped. */}
