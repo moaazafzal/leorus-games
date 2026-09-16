@@ -193,10 +193,10 @@ export default function Hero({ content }: { content: HeroContent }) {
               initial={{ y: 90, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.9, type: "spring", stiffness: 110, damping: 14 }}
-              className="absolute bottom-0 left-1/2 -translate-x-1/2 w-36 md:w-40"
+              className="absolute bottom-0 left-1/2 -translate-x-1/2 w-32 md:w-36"
             >
               <div className="animate-floaty" style={{ animationDelay: "0.6s" }}>
-                <Img src={content.mascotBadge} alt="Leorus mascot" width={480} height={493} priority className="w-full h-auto" />
+                <Img src={content.mascotBadge} alt="Leorus mascot" width={520} height={606} priority className="w-full h-auto" />
               </div>
             </motion.div>
           </motion.div>
