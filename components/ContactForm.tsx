@@ -21,7 +21,7 @@ function normalizeTopics(topics: string[] | string | undefined): string[] {
 // FormSubmit, which relays the message on. The first submission to a given
 // address triggers a one-off confirmation mail there; until that link is
 // clicked, FormSubmit delivers nothing.
-const FALLBACK_INBOX = "io.aquagames@gmail.com";
+const FALLBACK_INBOX = "leorusgames@gmail.com";
 
 // FormSubmit relays to the single address in its endpoint, so everyone else
 // is copied in. Only the endpoint address needs the one-off confirmation
