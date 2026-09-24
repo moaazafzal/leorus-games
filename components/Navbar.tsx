@@ -30,7 +30,8 @@ export default function Navbar({
     { href: "/services", label: labels.services ?? "Services" },
     { href: "/games", label: labels.games ?? "Games" },
     { href: "/arcade", label: labels.arcade ?? "Arcade" },
-    { href: "/contact", label: labels.contact ?? "Contact" },
+    // Contact is not listed here: the Get in touch button beside the toggle is
+    // the contact affordance, and the footer still links the page.
   ];
   const [open, setOpen] = useState(false);
   const [hidden, setHidden] = useState(false);
