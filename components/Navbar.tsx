@@ -97,7 +97,15 @@ export default function Navbar({
             ))}
           </nav>
 
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-2">
+            {/* The nav pill is dark in both themes, so this stays a white pill
+                with fixed dark text rather than following ink/paper. */}
+            <Link
+              href="/contact"
+              className="hidden sm:inline-flex items-center rounded-full bg-white text-[#111111] px-4 py-1.5 text-xs md:text-sm font-semibold hover:bg-white/85 transition-colors"
+            >
+              Get in touch
+            </Link>
             <ThemeToggle />
             <button
               aria-label="Toggle menu"
@@ -131,6 +139,13 @@ export default function Navbar({
                   {l.label}
                 </Link>
               ))}
+              <Link
+                href="/contact"
+                onClick={() => setOpen(false)}
+                className="mt-1 px-4 py-3 rounded-xl bg-white text-[#111111] text-base font-semibold text-center"
+              >
+                Get in touch
+              </Link>
             </motion.nav>
           )}
         </AnimatePresence>
