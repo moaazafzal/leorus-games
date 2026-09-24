@@ -60,7 +60,7 @@ export default function Navbar({
         transition={{ type: "spring", stiffness: 260, damping: 28 }}
         className="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 pt-4"
       >
-        <div className="w-full max-w-3xl on-dark bg-[#2f2f2f] rounded-2xl px-5 py-3 flex items-center justify-between shadow-lg">
+        <div className="w-full max-w-5xl on-dark bg-[#2f2f2f] rounded-2xl px-5 py-3 flex items-center justify-between shadow-lg">
           <Link href="/" className="flex items-center gap-2.5 text-lg font-extrabold tracking-tight text-white">
             {logo && (
               <Image
@@ -72,7 +72,7 @@ export default function Navbar({
                 className="w-8 h-8 md:w-9 md:h-9 object-contain"
               />
             )}
-            <span>
+            <span className="whitespace-nowrap">
               {brand}<span className="text-accent-ink">.</span>
             </span>
           </Link>
@@ -98,13 +98,18 @@ export default function Navbar({
           </nav>
 
           <div className="flex items-center gap-2">
-            {/* The nav pill is dark in both themes, so this stays a white pill
-                with fixed dark text rather than following ink/paper. */}
+            {/* Tinted in the site's own accent rather than solid white: the bar is
+                dark in both themes, so white text over the tint stays legible while
+                the brand colour, not a white slab, carries the call to action. */}
             <Link
               href="/contact"
-              className="hidden sm:inline-flex items-center rounded-full bg-white text-[#111111] px-4 py-1.5 text-xs md:text-sm font-semibold hover:bg-white/85 transition-colors"
+              className="hidden sm:inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-accent/40 bg-accent/20 px-4 py-1.5 text-sm font-semibold text-white hover:bg-accent/35 hover:border-accent/70 transition-colors"
             >
               Get in touch
+              <svg viewBox="0 0 24 24" className="w-3.5 h-3.5" fill="none" aria-hidden="true">
+                <path d="M5 12h12M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2.4"
+                      strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
             </Link>
             <ThemeToggle />
             <button
@@ -142,7 +147,7 @@ export default function Navbar({
               <Link
                 href="/contact"
                 onClick={() => setOpen(false)}
-                className="mt-1 px-4 py-3 rounded-xl bg-white text-[#111111] text-base font-semibold text-center"
+                className="mt-1 px-4 py-3 rounded-xl border border-accent/40 bg-accent/20 text-white text-base font-semibold text-center hover:bg-accent/35 transition-colors"
               >
                 Get in touch
               </Link>
