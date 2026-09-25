@@ -492,6 +492,12 @@
     "body": "Web builds that start in a tab. No install, no store, just press play.",
     "items": [
       {
+        "title": "Royal Room Poker",
+        "genre": "Poker",
+        "cover": "/img/web/royal-room-poker.webp",
+        "url": "https://moaazafzal.github.io/poker-proto/"
+      },
+      {
         "title": "Ink Fighter",
         "genre": "Shooter",
         "cover": "/img/web/ink-fighter.webp",
