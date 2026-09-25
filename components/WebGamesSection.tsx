@@ -20,7 +20,7 @@ export type WebGamesContent = {
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
-function Cover({ src, alt }: { src: string; alt: string }) {
+function Cover({ src, alt, featured }: { src: string; alt: string; featured?: boolean }) {
   const [err, setErr] = useState(false);
   if (!src || err) return <div className="absolute inset-0 bg-sunken" />;
   return (
@@ -30,7 +30,7 @@ function Cover({ src, alt }: { src: string; alt: string }) {
       width={960}
       height={540}
       onError={() => setErr(true)}
-      className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+      className={`absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105${featured ? " object-[50%_15%]" : ""}`}
     />
   );
 }
@@ -38,6 +38,8 @@ function Cover({ src, alt }: { src: string; alt: string }) {
 export default function WebGamesSection({ content }: { content: WebGamesContent }) {
   const items = (content.items ?? []).filter((g) => g && g.title);
   if (items.length === 0) return null;
+  // With an odd number of games, the first one spans both columns so the grid stays even.
+  const featured = (i: number) => i === 0 && items.length % 2 === 1;
 
   return (
     <section className="py-16 md:py-24">
@@ -89,10 +91,10 @@ export default function WebGamesSection({ content }: { content: WebGamesContent 
                 },
               }}
               whileHover={{ y: -6 }}
-              className="group block rounded-3xl overflow-hidden bg-surface border border-ink/[0.06] shadow-[0_2px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_16px_44px_rgba(184,84,26,0.12)] transition-shadow duration-300"
+              className={`${featured(i) ? "sm:col-span-2 " : ""}group block rounded-3xl overflow-hidden bg-surface border border-ink/[0.06] shadow-[0_2px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_16px_44px_rgba(184,84,26,0.12)] transition-shadow duration-300`}
             >
-              <div className="relative aspect-video overflow-hidden bg-sunken">
-                <Cover src={g.cover} alt={g.title} />
+              <div className={`relative aspect-video overflow-hidden bg-sunken${featured(i) ? " sm:aspect-[21/9]" : ""}`}>
+                <Cover src={g.cover} alt={g.title} featured={featured(i)} />
               </div>
               <div className="flex items-center justify-between gap-4 p-5">
                 <div className="min-w-0">
