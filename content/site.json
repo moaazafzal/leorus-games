@@ -588,11 +588,11 @@
   },
   "growthLanding": {
     "seoTitle": "User Acquisition as a Service for Mobile Games | Leorus Games",
-    "seoDescription": "You built the game. We bring the players. User acquisition, creative testing, app store optimization and monetization for mobile games, focused on acquiring players for less than they are worth. Free game audit.",
+    "seoDescription": "You built the game. We bring the players. User acquisition, creative testing, app store optimization and monetization for mobile games. Free game audit.",
     "hero": {
       "line1": "Turn Your Mobile Game",
       "line2": "Into a Growth Engine",
-      "intro": "User Acquisition as a Service for mobile games. You built the game. We bring the players.",
+      "intro": "You built the game. We bring the players. User acquisition for iOS and Android games, with one objective: acquire players for less than they are worth.",
       "ctaLabel": "Get a Free Game Audit",
       "badgeNumber": "15,000,000",
       "badgeWord": "",
@@ -619,387 +619,163 @@
       ],
       "mascotRightWide": true
     },
-    "intro": {
-      "title": "Your Game Isn't Dead",
-      "titleMuted": "Until the Numbers Say It Is",
-      "paragraphs": [
-        "Our User Acquisition as a Service helps mobile game developers acquire new players, improve monetization, reactivate underperforming titles, and determine whether a game can be scaled profitably.",
-        "Whether your game is available on iOS, Android, or both, we help you find the right players and build a sustainable acquisition strategy. Even if your mobile game has stopped growing, has very few active users, or has been sitting untouched for months, there may still be an opportunity.",
-        "We analyze your game, test acquisition channels, optimize campaigns and creatives, improve monetization, and focus on one objective:"
-      ],
-      "objective": "Acquire players for less than they are worth."
-    },
-    "servicesTitle": "What We |Do|",
-    "servicesBody": "Five parts of one job: finding players who are worth more than they cost.",
-    "services": [
+    "channelsTitle": "Channels We |Work With|",
+    "channelsBody": "Campaigns and monetization across the networks that matter for mobile games.",
+    "channels": [
       {
-        "title": "User Acquisition Strategy",
-        "body": [
-          "We analyze your mobile game, target audience, monetization model, competitors, store presence, and current performance before deciding where and how to acquire users.",
-          "Our strategy is built around the economics of your game rather than simply generating as many installs as possible."
-        ]
+        "name": "Facebook",
+        "icon": "facebook"
       },
       {
-        "title": "Paid User Acquisition",
-        "body": [
-          "We set up, structure, and optimize mobile game acquisition campaigns across relevant platforms."
-        ],
-        "listTitle": "Platforms such as",
-        "items": [
-          "AppLovin",
-          "Mintegral",
-          "Meta Ads",
-          "Google Ads / Google App Campaigns",
-          "Apple Search Ads",
-          "YouTube",
-          "Other mobile gaming acquisition channels"
-        ],
-        "after": [
-          "We test audiences, countries, creatives, campaign structures, and bidding strategies to identify where your strongest opportunities are.",
-          "We focus on acquiring players who do more than install: players who retain, engage, monetize, and generate positive return on ad spend."
-        ],
-        "note": "Advertising budget is paid separately by the client."
+        "name": "Unity Ads",
+        "icon": "unity"
+      },
+      {
+        "name": "AppLovin"
+      },
+      {
+        "name": "ironSource"
+      },
+      {
+        "name": "Mintegral"
+      },
+      {
+        "name": "Pinterest",
+        "icon": "pinterest"
+      },
+      {
+        "name": "Liftoff"
+      },
+      {
+        "name": "X",
+        "icon": "x",
+        "iconOnly": true
+      },
+      {
+        "name": "Reddit",
+        "icon": "reddit"
+      },
+      {
+        "name": "Instagram",
+        "icon": "instagram"
+      },
+      {
+        "name": "Meta",
+        "icon": "meta"
+      },
+      {
+        "name": "Vungle"
+      },
+      {
+        "name": "Google Ads",
+        "icon": "googleads"
+      },
+      {
+        "name": "AdMob",
+        "icon": "googleadmob"
+      },
+      {
+        "name": "YouTube",
+        "icon": "youtube"
+      },
+      {
+        "name": "Search Ads",
+        "icon": "apple"
+      },
+      {
+        "name": "Snapchat",
+        "icon": "snapchat"
+      },
+      {
+        "name": "TikTok",
+        "icon": "tiktok"
+      }
+    ],
+    "servicesTitle": "What We |Do|",
+    "services": [
+      {
+        "title": "UA Strategy",
+        "body": "Built around your game's economics, not just install volume."
+      },
+      {
+        "title": "Paid Acquisition",
+        "body": "Campaigns on AppLovin, Mintegral, Meta, Google, Apple Search Ads and YouTube, judged on ROAS."
       },
       {
         "title": "Creative Testing",
-        "body": [
-          "Creative performance can make or break a mobile acquisition campaign.",
-          "We identify the gameplay moments, mechanics, characters, rewards, hooks, and messaging most likely to convince potential players to install your game."
-        ],
-        "listTitle": "We test and recommend concepts such as",
-        "items": [
-          "Gameplay creatives",
-          "Short-form video ads",
-          "Playable-ad concepts",
-          "Different opening hooks",
-          "Game mechanics",
-          "Characters and rewards",
-          "Store screenshots",
-          "Ad copy",
-          "Calls to action",
-          "Different player audiences"
-        ],
-        "after": [
-          "The goal is to continuously identify which creative concepts produce the best players at the lowest acquisition cost."
-        ]
+        "body": "Videos, playables and hooks tested until we know what brings the best players for less."
       },
       {
         "title": "App Store Optimization",
-        "body": [
-          "Getting someone to click on your game is only half the battle. Your App Store or Google Play page must convince them to install."
-        ],
-        "listTitle": "We help improve store conversion through",
-        "items": [
-          "App Store positioning",
-          "Google Play positioning",
-          "Screenshots",
-          "Game descriptions",
-          "Icons",
-          "Promotional messaging",
-          "Store listing recommendations",
-          "Conversion optimization recommendations"
-        ],
-        "after": [
-          "A better store conversion rate means more installs from the same advertising budget."
-        ]
+        "body": "Icons, screenshots and copy that turn more store visits into installs."
       },
       {
-        "title": "Monetization Optimization",
-        "body": [
-          "Acquiring players only makes sense if your game generates enough value from those players. That is why we optimize user acquisition and monetization together.",
-          "We analyze your game's existing monetization model and identify opportunities to increase revenue while protecting the player experience."
-        ],
-        "listTitle": "This can include",
-        "items": [
-          "Rewarded video ads",
-          "Interstitial ads",
-          "Banner advertising",
-          "MREC advertising",
-          "App-open advertising",
-          "In-app purchases",
-          "Hybrid monetization",
-          "Ad placement optimization",
-          "Ad frequency optimization",
-          "Revenue-per-user optimization",
-          "Mediation optimization",
-          "Ad network optimization"
-        ]
+        "title": "Monetization",
+        "body": "Rewarded, interstitial and banner ads, in-app purchases and mediation, tuned for revenue per player."
+      },
+      {
+        "title": "Analytics",
+        "body": "CPI, retention, ARPDAU, LTV and ROAS: the numbers that decide whether a game can scale."
       }
     ],
-    "platformsTitle": "AppLovin & |Mintegral|",
-    "platformsBody": "Both networks work on both sides of a game: bringing players in and earning from them.",
-    "platforms": [
-      {
-        "title": "AppLovin",
-        "body": [
-          "For ad-supported and hybrid mobile games, we can use AppLovin as part of both the acquisition and monetization strategy."
-        ],
-        "listTitle": "We analyze areas such as",
-        "items": [
-          "Ad mediation",
-          "Rewarded video performance",
-          "Interstitial performance",
-          "Banner and MREC performance",
-          "Ad frequency",
-          "eCPM",
-          "Fill rate",
-          "Geographic performance",
-          "Ad revenue per user",
-          "User acquisition performance",
-          "ROAS",
-          "A/B testing opportunities",
-          "Monetization reporting"
-        ],
-        "after": [
-          "The goal is not simply to show more advertising. The goal is to maximize player lifetime value while maintaining a healthy player experience."
-        ]
-      },
-      {
-        "title": "Mintegral",
-        "body": [
-          "Mintegral can also be used for both mobile user acquisition and advertising monetization. Depending on the game, target audience, and geographic market, it can provide an additional source of users and advertising demand."
-        ],
-        "listTitle": "We evaluate",
-        "items": [
-          "Mintegral user acquisition",
-          "Rewarded video performance",
-          "Interstitial performance",
-          "eCPM by country",
-          "Fill rate",
-          "Ad revenue",
-          "Ad impressions per user",
-          "Player quality",
-          "Acquisition cost",
-          "ROAS",
-          "Performance compared with other channels"
-        ],
-        "after": [
-          "Instead of depending on a single platform, we compare performance and direct budget toward the channels producing the strongest results."
-        ]
-      }
-    ],
-    "loop": {
-      "title": "The Mobile Game Growth |Loop|",
-      "body": "User acquisition and monetization should not operate as separate systems. We connect both sides of your game.",
-      "steps": [
-        "Acquire",
-        "Retain",
-        "Monetize",
-        "Measure",
-        "Reinvest",
-        "Scale"
-      ],
-      "principleTitle": "The principle is simple",
-      "principle": [
-        "Acquire players through channels such as AppLovin and Mintegral.",
-        "Monetize those players.",
-        "Measure their true lifetime value.",
-        "Reinvest part of the revenue into acquiring additional profitable players.",
-        "Then scale what works."
-      ],
-      "note": "This creates a continuous growth loop rather than a one-time advertising campaign."
-    },
-    "metricsTitle": "Analytics & |Attribution|",
-    "metricsBody": "We focus on the metrics that determine whether your mobile game can actually scale.",
-    "metrics": [
-      {
-        "abbr": "CPI",
-        "label": "Cost Per Install"
-      },
-      {
-        "abbr": "CPA",
-        "label": "Cost Per Acquired Player"
-      },
-      {
-        "abbr": "D1 / D7 / D30",
-        "label": "Retention"
-      },
-      {
-        "abbr": "ARPDAU",
-        "label": "Average Revenue Per Daily Active User"
-      },
-      {
-        "abbr": "ARPU",
-        "label": "Average Revenue Per User"
-      },
-      {
-        "abbr": "LTV",
-        "label": "Player Lifetime Value"
-      },
-      {
-        "abbr": "eCPM",
-        "label": "Ad Revenue Per 1,000 Impressions"
-      },
-      {
-        "abbr": "Fill Rate",
-        "label": "Share of ad requests filled"
-      },
-      {
-        "abbr": "IAP",
-        "label": "In-App Purchase Revenue"
-      },
-      {
-        "abbr": "Ad Revenue",
-        "label": "Revenue from advertising"
-      },
-      {
-        "abbr": "ROAS",
-        "label": "Return on Ad Spend"
-      }
-    ],
-    "metricsNote": "The objective isn't simply to generate installs. The objective is to find valuable players and scalable acquisition channels.",
-    "deadGame": {
-      "title": "Have a Dead\nMobile Game?",
-      "body": [
-        "A game with declining downloads does not automatically mean the game has no value.",
-        "We specialize in evaluating mobile games that are no longer growing."
-      ],
-      "note": "Instead of immediately abandoning the game, we test whether it can still become commercially viable.",
-      "listTitle": "Maybe your game",
-      "items": [
-        "Has almost no new players",
-        "Has declining revenue",
-        "Never received proper marketing",
-        "Was launched and then abandoned",
-        "Has good gameplay but poor visibility",
-        "Has thousands of downloads but weak monetization",
-        "Has good reviews but very little traffic",
-        "Has not been advertised for months",
-        "Has never had a structured user acquisition strategy",
-        "Has players but poorly optimized ad revenue",
-        "Relies too heavily on one acquisition or monetization channel"
-      ]
-    },
-    "revival": {
-      "title": "Mobile Game Revival",
-      "body": "We examine the complete player funnel, then identify where growth is breaking down.",
-      "funnel": [
-        "Acquisition",
-        "Install",
-        "Activation",
-        "Retention",
-        "Monetization",
-        "LTV",
-        "Reinvestment"
-      ],
-      "items": [
-        "Sometimes the problem isn't the game. It is the acquisition strategy.",
-        "Sometimes advertising generates clicks, but the store page does not convert.",
-        "Sometimes players install but leave after their first session.",
-        "Sometimes retention is strong but monetization is weak.",
-        "Sometimes the game generates revenue, but its ad setup has never been properly optimized.",
-        "Sometimes the game simply never received enough qualified traffic."
-      ],
-      "note": "We find the bottleneck before wasting more money on advertising."
-    },
     "stepsTitle": "How It |Works|",
     "steps": [
       {
-        "title": "Game Audit",
-        "body": [
-          "We review your mobile game, App Store or Google Play presence, analytics, monetization model, player retention, ad monetization, previous campaigns, and target markets."
-        ]
+        "title": "Audit",
+        "body": "We review your game, store page, analytics and monetization."
       },
       {
-        "title": "Growth Hypothesis",
-        "body": [
-          "We identify the most promising:"
-        ],
-        "items": [
-          "Player segments",
-          "Countries",
-          "Acquisition channels",
-          "Creative concepts",
-          "Store improvements",
-          "Monetization opportunities",
-          "AppLovin opportunities",
-          "Mintegral opportunities",
-          "Ad network and mediation improvements"
-        ]
+        "title": "Hypothesis",
+        "body": "We pick the players, countries, channels and creatives to test."
       },
       {
         "title": "Launch",
-        "body": [
-          "We launch controlled user acquisition experiments using small advertising budgets.",
-          "The objective is to collect real data before attempting to scale."
-        ]
+        "body": "Small-budget experiments to collect real data."
       },
       {
         "title": "Measure",
-        "body": [
-          "We analyze:"
-        ],
-        "items": [
-          "Acquisition cost",
-          "Install conversion",
-          "Player retention",
-          "Ad revenue",
-          "In-app purchase revenue",
-          "ARPU / ARPDAU",
-          "eCPM",
-          "Fill rate",
-          "Player quality",
-          "LTV",
-          "ROAS"
-        ]
+        "body": "Install cost, retention, ad revenue, LTV and ROAS."
       },
       {
         "title": "Optimize",
-        "body": [
-          "Campaigns, audiences, countries, creatives, and monetization configurations that perform well receive more attention and budget. Poor-performing campaigns are stopped or reworked.",
-          "Monetization is continuously evaluated based on actual player and revenue performance."
-        ]
+        "body": "What works gets the budget. The rest is stopped or reworked."
       },
       {
         "title": "Scale",
-        "body": [
-          "When the acquisition economics make sense, campaigns can gradually scale."
-        ]
+        "body": "Only once players are worth more than they cost."
       }
     ],
-    "equationTitle": "The fundamental equation",
     "equationLeft": "Player Lifetime Value",
-    "equationRight": "Player Acquisition Cost",
-    "equationNote": "When that equation works consistently, the game has the potential to grow profitably.",
+    "equationRight": "Acquisition Cost",
     "reviewsTitle": "What Clients Say",
     "reviewsBody": "Developers we have helped with ads, in-app purchases and monetisation.",
     "pricing": {
       "title": "Pricing",
       "name": "UA Starter",
-      "from": "",
       "price": "$299",
       "period": "per quarter",
-      "body": "Built for indie mobile game developers and smaller studios that want professional user acquisition and monetization support without hiring an internal UA team.",
+      "body": "For indie developers and smaller studios who want UA and monetization support without hiring a team.",
       "includesTitle": "Includes",
       "includes": [
-        "Initial mobile game acquisition audit",
-        "User acquisition strategy",
+        "Acquisition audit and UA strategy",
+        "Channel and country selection",
         "Campaign structure recommendations",
-        "Target audience research",
-        "Market and country recommendations",
-        "Acquisition channel selection",
-        "AppLovin recommendations",
-        "Mintegral recommendations",
-        "Monetization review",
-        "Mediation recommendations",
-        "Monthly campaign review",
-        "Creative recommendations",
-        "App Store / Google Play conversion recommendations",
-        "KPI tracking",
-        "Quarterly performance report",
-        "Growth recommendations"
+        "AppLovin and Mintegral recommendations",
+        "Monetization and mediation review",
+        "Creative and store page recommendations",
+        "Monthly campaign review and KPI tracking",
+        "Quarterly performance report"
       ],
-      "adSpendNote": "Advertising spend is not included in the $299 quarterly fee.",
-      "customNote": "Bigger budget or several titles? We'll scope it with you after the audit."
+      "adSpendNote": "Ad spend is not included."
     },
     "closing": {
-      "title": "Give Your Mobile Game Another Chance",
-      "body": "Whether you're launching a new mobile game or trying to revive a title that has stopped growing, we help determine what it takes to acquire players profitably and maximize the value of every player you already have.",
-      "cta": "Let's Find Out"
+      "title": "Have a Dead Mobile Game?",
+      "body": "Your game isn't dead until the numbers say it is. We test whether it can still grow profitably.",
+      "cta": "Get a Free Game Audit"
     },
     "audit": {
       "title": "Let's Find |Out|",
-      "intro": "Your game may not need millions of downloads. It needs the right players, acquired at the right cost, with the right monetization strategy. Your old game may still have value: send it to us and we'll reply within two working days with where growth is breaking down. The audit is free.",
+      "intro": "Your old game may still have value. Send it to us and we'll reply within two working days with where growth is breaking down. The audit is free.",
       "form": {
         "button": "Request My Free Audit",
         "successTitle": "Audit request received.",

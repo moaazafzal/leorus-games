@@ -4,12 +4,8 @@ import ReviewsSection, { type ReviewsContent } from "@/components/ReviewsSection
 import CareersCTA from "@/components/CareersCTA";
 import {
   AUDIT,
-  GrowthIntro,
+  GrowthChannels,
   GrowthServices,
-  GrowthPlatforms,
-  GrowthLoop,
-  GrowthMetrics,
-  GrowthDeadGame,
   GrowthSteps,
   GrowthPricing,
   GrowthAudit,
@@ -54,12 +50,8 @@ export default async function GrowthPage() {
   return (
     <main>
       <Hero content={{ ...g.hero, cta: { label: g.hero.ctaLabel, href: AUDIT } }} />
-      <GrowthIntro content={g} />
+      <GrowthChannels content={g} />
       <GrowthServices content={g} />
-      <GrowthPlatforms content={g} />
-      <GrowthLoop content={g} />
-      <GrowthMetrics content={g} />
-      <GrowthDeadGame content={g} />
       <GrowthSteps content={g} />
       {c.reviews && <ReviewsSection content={onTopicFirst(c.reviews, g.reviewsTitle, g.reviewsBody)} />}
       <GrowthPricing content={g} />
