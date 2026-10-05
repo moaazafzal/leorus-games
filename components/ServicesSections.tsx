@@ -53,17 +53,22 @@ function Rise({
 function Heading({ text }: { text: string }) {
   return (
     <h2 className="display font-extrabold text-[clamp(2rem,4.5vw,3.4rem)] text-center">
-      <span className="block overflow-hidden pb-[0.08em] -mb-[0.08em]">
+      {/* The wrapper is what gets watched: the text starts pushed below the
+          clip, so watching the text itself would never see it come into view. */}
+      <motion.span
+        className="block overflow-hidden pb-[0.08em] -mb-[0.08em]"
+        initial="hidden"
+        whileInView="shown"
+        viewport={{ once: true, margin: "-60px" }}
+      >
         <motion.span
           className="inline-block will-change-transform"
-          initial={{ y: "115%" }}
-          whileInView={{ y: 0 }}
-          viewport={{ once: true, margin: "-60px" }}
+          variants={{ hidden: { y: "115%" }, shown: { y: 0 } }}
           transition={{ duration: 0.75, ease: EASE }}
         >
           {accent(text)}
         </motion.span>
-      </span>
+      </motion.span>
     </h2>
   );
 }

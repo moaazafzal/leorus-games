@@ -125,17 +125,21 @@ export default function GamesSection({
           <div className="text-center max-w-md mx-auto">
             <h2 className="display font-extrabold text-[clamp(2rem,4.5vw,3.4rem)]">
               {content.titleLines.map((line, i) => (
-                <span key={i} className="block overflow-hidden pb-[0.08em] -mb-[0.08em]">
+                <motion.span
+                  key={i}
+                  className="block overflow-hidden pb-[0.08em] -mb-[0.08em]"
+                  initial="hidden"
+                  whileInView="shown"
+                  viewport={{ once: true, margin: "-60px" }}
+                >
                   <motion.span
                     className="inline-block will-change-transform"
-                    initial={{ y: "115%" }}
-                    whileInView={{ y: 0 }}
-                    viewport={{ once: true, margin: "-60px" }}
+                    variants={{ hidden: { y: "115%" }, shown: { y: 0 } }}
                     transition={{ delay: 0.1 + i * 0.1, duration: 0.75, ease: EASE }}
                   >
                     {accent(line)}
                   </motion.span>
-                </span>
+                </motion.span>
               ))}
             </h2>
             <motion.p

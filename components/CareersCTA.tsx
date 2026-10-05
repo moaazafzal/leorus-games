@@ -24,17 +24,20 @@ export default function CareersCTA({
       </div>
       <div className="relative mx-auto max-w-5xl px-6 text-center">
         <h2 className="display font-extrabold text-[clamp(2.4rem,6vw,5.5rem)]">
-          <span className="block overflow-hidden pb-[0.08em] -mb-[0.08em]">
+          <motion.span
+            className="block overflow-hidden pb-[0.08em] -mb-[0.08em]"
+            initial="hidden"
+            whileInView="shown"
+            viewport={{ once: true, margin: "-60px" }}
+          >
             <motion.span
               className="inline-block will-change-transform"
-              initial={{ y: "115%" }}
-              whileInView={{ y: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
+              variants={{ hidden: { y: "115%" }, shown: { y: 0 } }}
               transition={{ duration: 0.8, ease: EASE }}
             >
               {title}
             </motion.span>
-          </span>
+          </motion.span>
         </h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}

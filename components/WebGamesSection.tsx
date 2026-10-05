@@ -46,17 +46,20 @@ export default function WebGamesSection({ content }: { content: WebGamesContent 
       <div className="mx-auto max-w-[1200px] px-4 md:px-6">
         <div className="text-center">
           <h2 className="display font-extrabold text-[clamp(2rem,4.5vw,3.4rem)]">
-            <span className="block overflow-hidden pb-[0.08em] -mb-[0.08em]">
+            <motion.span
+              className="block overflow-hidden pb-[0.08em] -mb-[0.08em]"
+              initial="hidden"
+              whileInView="shown"
+              viewport={{ once: true, margin: "-60px" }}
+            >
               <motion.span
                 className="inline-block will-change-transform"
-                initial={{ y: "115%" }}
-                whileInView={{ y: 0 }}
-                viewport={{ once: true, margin: "-60px" }}
+                variants={{ hidden: { y: "115%" }, shown: { y: 0 } }}
                 transition={{ duration: 0.75, ease: EASE }}
               >
                 {accent(content.title)}
               </motion.span>
-            </span>
+            </motion.span>
           </h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
