@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import {
   ServicePillars,
+  ServiceGrowthTeaser,
   ServiceStack,
   ServiceWhy,
   ServiceCta,
@@ -33,6 +34,7 @@ export default async function ServicesPage() {
       <div className="mt-14">
         <ServicePillars content={s} />
       </div>
+      <ServiceGrowthTeaser content={s} />
       <ServiceStack content={s} />
       <ServiceWhy content={s} />
       <ServiceCta content={s} />

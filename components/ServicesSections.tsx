@@ -7,7 +7,7 @@ import { accent } from "@/lib/accent";
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 /** Comma separated strings are how the dashboard edits short lists. */
-function list(value: string[] | string | undefined): string[] {
+export function list(value: string[] | string | undefined): string[] {
   if (Array.isArray(value)) return value.filter(Boolean);
   return String(value ?? "")
     .split(",")
@@ -26,9 +26,12 @@ export type ServicesContent = {
   ctaTitle: string;
   ctaBody: string;
   ctaLabel: string;
+  growthTeaserTitle?: string;
+  growthTeaserBody?: string;
+  growthTeaserLabel?: string;
 };
 
-function Rise({
+export function Rise({
   children,
   delay = 0,
   className = "",
@@ -50,7 +53,7 @@ function Rise({
   );
 }
 
-function Heading({ text }: { text: string }) {
+export function Heading({ text }: { text: string }) {
   return (
     <h2 className="display font-extrabold text-[clamp(2rem,4.5vw,3.4rem)] text-center">
       {/* The wrapper is what gets watched: the text starts pushed below the
@@ -73,7 +76,7 @@ function Heading({ text }: { text: string }) {
   );
 }
 
-function Tick() {
+export function Tick() {
   return (
     <svg viewBox="0 0 20 20" className="w-4 h-4 mt-0.5 shrink-0 text-accent-ink" aria-hidden="true">
       <path
@@ -113,6 +116,35 @@ export function ServicePillars({ content }: { content: ServicesContent }) {
             </Rise>
           ))}
         </div>
+      </div>
+    </section>
+  );
+}
+
+/** Points visitors with a stalled game at the user acquisition landing page. */
+export function ServiceGrowthTeaser({ content }: { content: ServicesContent }) {
+  if (!content.growthTeaserTitle) return null;
+  return (
+    <section className="pt-10 md:pt-14">
+      <div className="mx-auto max-w-[1200px] px-4 md:px-6">
+        <Rise>
+          <Link
+            href="/growth"
+            className="group flex flex-col md:flex-row md:items-center justify-between gap-5 rounded-3xl bg-inverse text-on-inverse px-7 py-7 md:px-10 hover:shadow-[0_16px_44px_rgba(184,84,26,0.18)] transition-shadow"
+          >
+            <div>
+              <p className="text-xl md:text-2xl font-extrabold">{content.growthTeaserTitle}</p>
+              <p className="mt-2 text-sm md:text-base text-white/60">{content.growthTeaserBody}</p>
+            </div>
+            <span className="inline-flex shrink-0 items-center gap-2 self-start md:self-auto whitespace-nowrap rounded-full bg-accent px-6 py-3 font-bold text-white group-hover:bg-white group-hover:text-inverse transition-colors">
+              {content.growthTeaserLabel}
+              <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" aria-hidden="true">
+                <path d="M5 12h12M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2.4"
+                      strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </span>
+          </Link>
+        </Rise>
       </div>
     </section>
   );

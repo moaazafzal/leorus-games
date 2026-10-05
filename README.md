@@ -37,4 +37,7 @@ Open http://localhost:3000.
 - `/about` — values, studios, careers CTA
 - `/games` — filterable game grid
 - `/contact` — contact form
+- `/growth` — user acquisition landing page for lead generation: stripped
+  navbar, every button lands on a free-audit form (subject "UA lead"). Copy
+  lives under `growthLanding` in `content/site.json`
 - `/dashboard` — private admin (auth required)

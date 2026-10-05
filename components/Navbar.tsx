@@ -47,6 +47,11 @@ export default function Navbar({
 
   if (pathname.startsWith("/dashboard")) return null;
 
+  // The growth page is a landing page shared on its own: no links to wander
+  // off through, and the button goes to the audit form on the page itself.
+  const landing = pathname.startsWith("/growth");
+  const cta = landing ? { href: "#audit", label: "Free audit" } : { href: "/contact", label: "Get in touch" };
+
   return (
     <>
       {/* Scroll progress */}
@@ -61,8 +66,8 @@ export default function Navbar({
         transition={{ type: "spring", stiffness: 260, damping: 28 }}
         className="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 pt-4"
       >
-        <div className="w-full max-w-5xl on-dark bg-[#2f2f2f] rounded-2xl px-5 py-3 flex items-center justify-between shadow-lg">
-          <Link href="/" className="flex items-center gap-2.5 text-lg font-extrabold tracking-tight text-white">
+        <div className="w-full max-w-5xl on-dark bg-[#2f2f2f] rounded-2xl px-4 sm:px-5 py-3 flex items-center justify-between gap-3 shadow-lg">
+          <Link href="/" className="flex items-center gap-2.5 text-base sm:text-lg font-extrabold tracking-tight text-white">
             {logo && (
               <Image
                 src={logo}
@@ -73,12 +78,14 @@ export default function Navbar({
                 className="w-8 h-8 md:w-9 md:h-9 object-contain"
               />
             )}
-            <span className="whitespace-nowrap">
+            {/* On the narrowest phones the landing page's button needs the room;
+                the bull logo still carries the brand. */}
+            <span className={`whitespace-nowrap ${landing ? "max-[379px]:hidden" : ""}`}>
               {brand}<span className="text-accent-ink">.</span>
             </span>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-1">
+          <nav className={landing ? "hidden" : "hidden md:flex items-center gap-1"}>
             {links.map((l) => (
               <Link
                 key={l.href}
@@ -103,11 +110,11 @@ export default function Navbar({
                 dark in both themes, so white text over the tint stays legible while
                 the brand colour, not a white slab, carries the call to action. */}
             <Link
-              href="/contact"
-              className="hidden sm:inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-accent/40 bg-accent/20 px-4 py-1.5 text-sm font-semibold text-white hover:bg-accent/35 hover:border-accent/70 transition-colors"
+              href={cta.href}
+              className={`${landing ? "inline-flex" : "hidden sm:inline-flex"} items-center gap-1.5 whitespace-nowrap rounded-full border border-accent/40 bg-accent/20 px-3 sm:px-4 py-1.5 text-sm font-semibold text-white hover:bg-accent/35 hover:border-accent/70 transition-colors`}
             >
-              Get in touch
-              <svg viewBox="0 0 24 24" className="w-3.5 h-3.5" fill="none" aria-hidden="true">
+              {cta.label}
+              <svg viewBox="0 0 24 24" className="hidden sm:block w-3.5 h-3.5" fill="none" aria-hidden="true">
                 <path d="M5 12h12M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2.4"
                       strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -116,7 +123,7 @@ export default function Navbar({
             <button
               aria-label="Toggle menu"
               onClick={() => setOpen(!open)}
-              className="md:hidden p-2"
+              className={landing ? "hidden" : "md:hidden p-2"}
             >
               <div className="w-5 space-y-1">
                 <span className={`block h-0.5 bg-white transition-transform ${open ? "rotate-45 translate-y-1.5" : ""}`} />

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { FALLBACK_INBOX, FALLBACK_SOURCE, relay } from "@/lib/relay";
 
 export type ContactFormContent = {
   topics?: string[] | string;
@@ -19,31 +20,9 @@ function normalizeTopics(topics: string[] | string | undefined): string[] {
   return list.length ? list : ["Publish my game", "Partner on an IP", "Careers", "Something else"];
 }
 
-// The site is a static export with no server of its own, so the form posts to
-// FormSubmit, which relays the message on. The first submission to a given
-// address triggers a one-off confirmation mail there; until that link is
-// clicked, FormSubmit delivers nothing.
-const FALLBACK_INBOX = "leorusgames@gmail.com";
-const FALLBACK_SOURCE = "Leorus Games";
-
-// Everyone who receives every enquiry. The Aqua Games and Leorus Games sites
-// carry the same list. FormSubmit relays to the single address in its
-// endpoint, so the rest are copied in; the endpoint address is dropped from
-// the copies so nobody receives a message twice. Only the endpoint address
-// needs the one-off confirmation click; the copied ones just receive.
-const TEAM_INBOXES = [
-  "io.aquagames@gmail.com",
-  "leorusgames@gmail.com",
-  "moaazafzal@gmail.com",
-  "husainisadiq@gmail.com",
-  "hamzaayoubofficial@gmail.com",
-];
-
 export default function ContactForm({ content = {} }: { content?: ContactFormContent }) {
   const inbox = (content.email || "").trim() || FALLBACK_INBOX;
   const source = (content.source || "").trim() || FALLBACK_SOURCE;
-  const endpoint = `https://formsubmit.co/ajax/${inbox}`;
-  const copies = TEAM_INBOXES.filter((a) => a.toLowerCase() !== inbox.toLowerCase());
   const [sent, setSent] = useState(false);
   const [sending, setSending] = useState(false);
   const [error, setError] = useState("");
@@ -56,22 +35,8 @@ export default function ContactForm({ content = {} }: { content?: ContactFormCon
     setError("");
 
     const fields = Object.fromEntries(new FormData(e.currentTarget).entries());
-    // The same five inboxes get messages from both studio sites, so every
-    // message says where it came from: first row of the email, and the exact
-    // page it was sent from as the last.
-    const data = {
-      "Received from": `${source} website`,
-      ...fields,
-      "Sent from page": window.location.href,
-    };
-
     try {
-      const res = await fetch(endpoint, {
-        method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify(data),
-      });
-      if (!res.ok) throw new Error(`Relay answered ${res.status}`);
+      await relay({ inbox, source, subject: "New contact message", fields });
       setSent(true);
     } catch {
       // Never show the success panel for a message that did not get through;
@@ -95,10 +60,6 @@ export default function ContactForm({ content = {} }: { content?: ContactFormCon
 
   return (
     <form onSubmit={submit} className="rounded-3xl border border-ink/10 bg-surface p-8 space-y-5">
-      <input type="hidden" name="_subject" value={`[${source} website] New contact message`} />
-      <input type="hidden" name="_cc" value={copies.join(",")} />
-      <input type="hidden" name="_template" value="table" />
-      <input type="hidden" name="_captcha" value="false" />
       {/* Honeypot: people leave it empty, bots fill it in and get dropped. */}
       <input type="text" name="_honey" tabIndex={-1} autoComplete="off" className="hidden" />
 

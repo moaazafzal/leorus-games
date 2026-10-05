@@ -22,6 +22,11 @@ export type HeroContent = {
   mascotLeft: string;
   mascotRight: string;
   stats: Stat[];
+  /** Optional line and button under the headline; the home page has neither. */
+  intro?: string;
+  cta?: { label: string; href: string };
+  /** The right slot is sized for a tall figure; a square one needs more width. */
+  mascotRightWide?: boolean;
 };
 
 const EASE = [0.22, 1, 0.36, 1] as const;
@@ -126,7 +131,7 @@ export default function Hero({ content }: { content: HeroContent }) {
       </motion.div>
       <motion.div
         style={{ y: yRight }}
-        className="pointer-events-none hidden lg:block absolute right-4 xl:right-10 top-40 w-40 xl:w-44"
+        className={`pointer-events-none hidden lg:block absolute right-4 xl:right-10 top-40 ${content.mascotRightWide ? "w-56 xl:w-64" : "w-40 xl:w-44"}`}
       >
         <motion.div
           initial={{ opacity: 0, x: 80, rotate: 8 }}
@@ -145,6 +150,26 @@ export default function Hero({ content }: { content: HeroContent }) {
           <br />
           <Words text={content.line2} baseDelay={0.28} />
         </h1>
+
+        {(content.intro || content.cta) && (
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, duration: 0.6, ease: EASE }}
+          >
+            {content.intro && (
+              <p className="mt-6 mx-auto max-w-xl text-lg text-ink/60">{content.intro}</p>
+            )}
+            {content.cta && (
+              <a
+                href={content.cta.href}
+                className="mt-8 inline-block rounded-full bg-ink text-paper font-bold px-9 py-4 hover:bg-accent hover:text-white transition-colors"
+              >
+                {content.cta.label}
+              </a>
+            )}
+          </motion.div>
+        )}
 
         {/* Downloads badge: spring pop + parallax + bobbing mascot */}
         <motion.div style={{ y: yBadge }}>

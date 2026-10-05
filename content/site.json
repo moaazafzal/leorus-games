@@ -581,6 +581,131 @@
     ],
     "ctaTitle": "Let's build something players finish",
     "ctaBody": "Tell us what you have in mind. A concept, a prototype that stalled, or a live game that needs its numbers moved.",
-    "ctaLabel": "Start a project"
+    "ctaLabel": "Start a project",
+    "growthTeaserTitle": "Have a game that stopped growing?",
+    "growthTeaserBody": "User acquisition as a service, from $299 per quarter. Start with a free audit of your game.",
+    "growthTeaserLabel": "Get a Free Game Audit"
+  },
+  "growthLanding": {
+    "seoTitle": "Mobile Game User Acquisition | Leorus Games",
+    "seoDescription": "User acquisition for mobile games: paid campaigns, creative testing, store pages and monetisation, judged on players who earn back more than they cost. Start with a free game audit.",
+    "hero": {
+      "line1": "Your Game Isn't Dead",
+      "line2": "Until the Numbers Say So",
+      "intro": "User acquisition for mobile games. We find players who earn back more than they cost, and tune monetisation so every one of them is worth more.",
+      "ctaLabel": "Get a Free Game Audit",
+      "badgeNumber": "15,000,000",
+      "badgeWord": "",
+      "badgeLabel": "Downloads across our games",
+      "mascotBadge": "/img/mascot-bull.webp",
+      "mascotLeft": "/img/mascot-left.png",
+      "mascotRight": "/img/mascot-right.png",
+      "stats": [
+        {
+          "value": 100,
+          "suffix": "+",
+          "label": "Games Published"
+        },
+        {
+          "value": 5,
+          "suffix": "M+",
+          "label": "Downloads on Rush Run"
+        },
+        {
+          "value": 1,
+          "suffix": "M+",
+          "label": "Downloads on Emoji Puzzle"
+        }
+      ],
+      "mascotRightWide": true
+    },
+    "problem": {
+      "title": "Has Your Game\nStopped Growing?",
+      "body": "Plenty of good games stall because the right players never found them, the store page never converted, or the ads were never set up properly. We find where it breaks before more money goes into ads.",
+      "mascot": "/img/mascot-birds.png",
+      "cards": [
+        {
+          "icon": "🕸️",
+          "title": "Launched, Then Left Alone",
+          "body": "No new players since launch week and no plan to bring them in. We test which channels and countries can still bring players in at a profit."
+        },
+        {
+          "icon": "⭐",
+          "title": "Good Reviews, No Traffic",
+          "body": "The players who find it like it, but too few find it. Sharper creatives and a store page that converts change that."
+        },
+        {
+          "icon": "💰",
+          "title": "Players, But Little Revenue",
+          "body": "Installs are there and revenue isn't. We tune ads, mediation and in-app purchases so each player earns more."
+        }
+      ]
+    },
+    "servicesTitle": "What We |Do|",
+    "servicesBody": "Four jobs, run together, and judged on whether each player pays back.",
+    "services": [
+      {
+        "title": "Paid Acquisition",
+        "body": "Campaigns on AppLovin, Mintegral, Meta, Google App Campaigns, Apple Search Ads and YouTube. We test audiences, countries and bids, then move budget to wherever players pay back."
+      },
+      {
+        "title": "Creative Testing",
+        "body": "Gameplay videos, playable concepts, hooks, characters and rewards, tested until we know which ones bring the best players for the least money."
+      },
+      {
+        "title": "Store Pages",
+        "body": "Icons, screenshots and descriptions for the App Store and Google Play. A store page that converts means more installs from the same budget."
+      },
+      {
+        "title": "Monetisation",
+        "body": "Rewarded, interstitial, banner and app-open ads, in-app purchases and mediation, tuned for revenue per player without spoiling the game."
+      }
+    ],
+    "loop": {
+      "titleLines": [
+        "Players Worth",
+        "More Than",
+        "They |Cost|"
+      ],
+      "body": "Every channel is judged on lifetime value against the cost of a player. Revenue from today's players pays for the next ones, and only what earns back gets scaled.",
+      "chips": [
+        "Acquire",
+        "Retain",
+        "Monetise",
+        "Measure",
+        "Reinvest",
+        "Scale"
+      ]
+    },
+    "reviewsTitle": "What Clients Say",
+    "reviewsBody": "Developers we have helped with ads, in-app purchases and monetisation.",
+    "pricing": {
+      "name": "UA Starter",
+      "from": "From",
+      "price": "$299",
+      "period": "per quarter",
+      "body": "For indie developers and smaller studios who want acquisition and monetisation support without hiring a UA team. We start with an audit, test on small budgets, and scale only what pays back.",
+      "includesTitle": "Included",
+      "includes": [
+        "Acquisition audit and UA strategy",
+        "Channel, audience and country selection",
+        "AppLovin and Mintegral recommendations",
+        "Monetisation and mediation review",
+        "Creative and store page recommendations",
+        "Monthly campaign review and KPI tracking",
+        "Quarterly performance report"
+      ],
+      "adSpendNote": "Ad spend is paid separately, straight to the ad networks.",
+      "customNote": "Bigger budget or several titles? We'll scope it with you after the audit."
+    },
+    "audit": {
+      "title": "Let's Find |Out|",
+      "intro": "Send us the game. We'll look at the store page, the numbers and the ad setup, and reply within two working days with where growth is breaking down. The audit is free.",
+      "form": {
+        "button": "Request My Free Audit",
+        "successTitle": "Audit request received.",
+        "successBody": "We'll look at your game and reply within two working days."
+      }
+    }
   }
 }
