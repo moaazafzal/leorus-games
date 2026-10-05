@@ -583,7 +583,7 @@
     "ctaBody": "Tell us what you have in mind. A concept, a prototype that stalled, or a live game that needs its numbers moved.",
     "ctaLabel": "Start a project",
     "growthTeaserTitle": "Have a game that stopped growing?",
-    "growthTeaserBody": "User acquisition as a service, from $299 per quarter. Start with a free audit of your game.",
+    "growthTeaserBody": "User acquisition as a service. Limited time offer: 50% off your first quarter.",
     "growthTeaserLabel": "Get a Free Game Audit"
   },
   "growthLanding": {
@@ -752,7 +752,7 @@
     "pricing": {
       "title": "Pricing",
       "name": "UA Starter",
-      "price": "$299",
+      "price": "$600",
       "period": "per quarter",
       "body": "For indie developers and smaller studios who want UA and monetization support without hiring a team.",
       "includesTitle": "Includes",
@@ -768,10 +768,10 @@
       ],
       "adSpendNote": "Ad spend is not included.",
       "offer": {
-        "label": "Special offer · 50% off",
-        "price": "$149.50",
+        "label": "Limited time offer · 50% off",
+        "price": "$300",
         "period": "first quarter",
-        "then": "Then $299 per quarter."
+        "then": "Then $600 per quarter."
       }
     },
     "closing": {
@@ -779,9 +779,9 @@
       "body": "Your game isn't dead until the numbers say it is. We test whether it can still grow profitably.",
       "cta": "Get a Free Game Audit",
       "offer": {
-        "label": "Special Offer · 50% Off",
-        "price": "$149.50",
-        "was": "$299",
+        "label": "Limited Time Offer · 50% Off",
+        "price": "$300",
+        "was": "$600",
         "period": "for your first quarter"
       }
     },
