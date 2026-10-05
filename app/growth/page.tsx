@@ -49,13 +49,21 @@ export default async function GrowthPage() {
 
   return (
     <main>
+      {/* The dead-game question opens the page: it is the hook the page is shared for. */}
+      <CareersCTA
+        title={g.closing.title}
+        body={g.closing.body}
+        cta={g.closing.cta}
+        link={AUDIT}
+        offer={g.closing.offer}
+        first
+      />
       <Hero content={{ ...g.hero, cta: { label: g.hero.ctaLabel, href: AUDIT } }} />
       <GrowthChannels content={g} />
       <GrowthServices content={g} />
       <GrowthSteps content={g} />
       {c.reviews && <ReviewsSection content={onTopicFirst(c.reviews, g.reviewsTitle, g.reviewsBody)} />}
       <GrowthPricing content={g} />
-      <CareersCTA title={g.closing.title} body={g.closing.body} cta={g.closing.cta} link={AUDIT} />
       <GrowthAudit content={g} email={c.contact.email} source={c.brand} />
     </main>
   );

@@ -40,8 +40,15 @@ export type GrowthContent = {
     includesTitle: string;
     includes: Items;
     adSpendNote: string;
+    /** A limited offer shown in place of the list price, which stays visible struck through. */
+    offer?: { label: string; price: string; period: string; then: string };
   };
-  closing: { title: string; body: string; cta: string };
+  closing: {
+    title: string;
+    body: string;
+    cta: string;
+    offer?: { label: string; price: string; was: string; period: string };
+  };
   audit: { title: string; intro: string; form: AuditFormContent };
 };
 
@@ -169,10 +176,24 @@ export function GrowthPricing({ content }: { content: GrowthContent }) {
       <Rise className="mt-12 rounded-3xl bg-sunken p-8 md:p-12 grid lg:grid-cols-[0.8fr_1.2fr] gap-10 lg:gap-16">
         <div>
           <h3 className="display font-extrabold text-[clamp(1.8rem,3.5vw,2.8rem)]">{p.name}</h3>
-          <p className="mt-6 flex items-baseline gap-3 flex-wrap">
-            <span className="display font-extrabold text-6xl md:text-7xl text-accent-ink">{p.price}</span>
-            <span className="text-ink/50 font-medium">{p.period}</span>
-          </p>
+          {p.offer ? (
+            <>
+              <p className="mt-5 inline-block -rotate-2 rounded-full bg-ink px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest text-paper">
+                {p.offer.label}
+              </p>
+              <p className="mt-4 flex items-baseline gap-3 flex-wrap">
+                <span className="text-2xl font-bold text-ink/40 line-through">{p.price}</span>
+                <span className="display font-extrabold text-6xl md:text-7xl text-accent-ink">{p.offer.price}</span>
+                <span className="text-ink/50 font-medium">{p.offer.period}</span>
+              </p>
+              <p className="mt-2 text-sm text-ink/50">{p.offer.then}</p>
+            </>
+          ) : (
+            <p className="mt-6 flex items-baseline gap-3 flex-wrap">
+              <span className="display font-extrabold text-6xl md:text-7xl text-accent-ink">{p.price}</span>
+              <span className="text-ink/50 font-medium">{p.period}</span>
+            </p>
+          )}
           <p className="mt-6 max-w-md text-ink/60">{p.body}</p>
           <p className="mt-4 font-semibold">{p.adSpendNote}</p>
         </div>

@@ -766,12 +766,24 @@
         "Monthly campaign review and KPI tracking",
         "Quarterly performance report"
       ],
-      "adSpendNote": "Ad spend is not included."
+      "adSpendNote": "Ad spend is not included.",
+      "offer": {
+        "label": "Special offer · 50% off",
+        "price": "$149.50",
+        "period": "first quarter",
+        "then": "Then $299 per quarter."
+      }
     },
     "closing": {
       "title": "Have a Dead Mobile Game?",
       "body": "Your game isn't dead until the numbers say it is. We test whether it can still grow profitably.",
-      "cta": "Get a Free Game Audit"
+      "cta": "Get a Free Game Audit",
+      "offer": {
+        "label": "Special Offer · 50% Off",
+        "price": "$149.50",
+        "was": "$299",
+        "period": "for your first quarter"
+      }
     },
     "audit": {
       "title": "Let's Find |Out|",
