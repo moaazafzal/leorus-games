@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
 import Hero from "@/components/Hero";
-import PartnerSection from "@/components/PartnerSection";
-import GamesSection from "@/components/GamesSection";
 import ReviewsSection, { type ReviewsContent } from "@/components/ReviewsSection";
+import CareersCTA from "@/components/CareersCTA";
 import {
   AUDIT,
+  GrowthIntro,
   GrowthServices,
+  GrowthPlatforms,
+  GrowthLoop,
+  GrowthMetrics,
+  GrowthDeadGame,
+  GrowthSteps,
   GrowthPricing,
   GrowthAudit,
   type GrowthContent,
@@ -49,11 +54,16 @@ export default async function GrowthPage() {
   return (
     <main>
       <Hero content={{ ...g.hero, cta: { label: g.hero.ctaLabel, href: AUDIT } }} />
-      <PartnerSection content={g.problem} />
+      <GrowthIntro content={g} />
       <GrowthServices content={g} />
-      <GamesSection content={g.loop} games={c.games} />
+      <GrowthPlatforms content={g} />
+      <GrowthLoop content={g} />
+      <GrowthMetrics content={g} />
+      <GrowthDeadGame content={g} />
+      <GrowthSteps content={g} />
       {c.reviews && <ReviewsSection content={onTopicFirst(c.reviews, g.reviewsTitle, g.reviewsBody)} />}
       <GrowthPricing content={g} />
+      <CareersCTA title={g.closing.title} body={g.closing.body} cta={g.closing.cta} link={AUDIT} />
       <GrowthAudit content={g} email={c.contact.email} source={c.brand} />
     </main>
   );
